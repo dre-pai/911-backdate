@@ -16,7 +16,7 @@ router.get('/message', function(req, res, next) {
   res.json('Welcome To 911 Backdate');
 });
 
-router.route('/test').post((req, res) => res.json('post worked'));
+router.get('/test', (req, res) => res.json('post worked'));
 
 router.post('/send', (req, res) => {
   let name = req.body.name;
