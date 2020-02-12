@@ -20,7 +20,7 @@ class ContactForm extends React.Component {
     };
 
     axios
-      .post('/api/send', {
+      .post('/send', {
         name,
         email,
         comments
