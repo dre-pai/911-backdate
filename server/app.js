@@ -20,6 +20,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+app.use('/images', express.static(path.join(__dirname, '/../public/images')));
 app.use('/api', index);
 app.get('*', (req, res) => {
   res.sendFile('build/index.html', { root: global });

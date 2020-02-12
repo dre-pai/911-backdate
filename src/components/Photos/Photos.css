@@ -1,0 +1,23 @@
+#ReactGridGallery {
+  text-align: center;
+}
+
+.ReactGridGallery_tile {
+  float: none !important;
+  display: inline-block;
+  margin: 0 3px !important;
+}
+
+@media (max-width: 580px) {
+  .ReactGridGallery_tile-viewport {
+    height: auto !important;
+  }
+  .ReactGridGallery_tile-viewport img {
+    width: 100%;
+    height: auto !important;
+  }
+
+  .ReactGridGallery_tile {
+    display: block;
+  }
+}
