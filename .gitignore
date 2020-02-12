@@ -6,6 +6,7 @@ package-lock.json
 
 # production
 /server/build
+/server/config.json
 
 # misc
 .DS_Store
