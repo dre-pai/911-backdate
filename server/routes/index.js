@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
-const emailCredentials = require('../config.json');
+//const emailCredentials = require('../config.json');
 
 router.get('/message', function(req, res, next) {
   res.json('Welcome To 911 Backdate');
@@ -16,8 +16,8 @@ router.post('/send', (req, res) => {
   let transport = {
     host: 'smtp.gmail.com',
     auth: {
-      user: emailCredentials.email,
-      pass: emailCredentials.pass
+      user: 'a',
+      pass: 'a'
     }
   };
 
