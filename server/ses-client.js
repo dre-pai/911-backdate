@@ -21,20 +21,15 @@ const sendEmail = (to, subject, message, from) => {
           Charset: 'UTF-8',
           Data: message
         }
-        /* replace Html attribute with the following if you want to send plain text emails. 
-                Text: {
-                    Charset: "UTF-8",
-                    Data: message
-                }
-             */
       },
       Subject: {
         Charset: 'UTF-8',
         Data: subject
       }
     },
-    ReturnPath: from ? from : config.aws.ses.from.default,
-    Source: from ? from : config.aws.ses.from.default
+    ReplyToAddresses: [from],
+    ReturnPath: to ? to : config.aws.ses.from.default,
+    Source: to ? to : config.aws.ses.from.default
   };
 
   ses.sendEmail(params, (err, data) => {
