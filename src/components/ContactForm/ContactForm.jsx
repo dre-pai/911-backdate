@@ -19,7 +19,36 @@ class ContactForm extends React.Component {
       document.getElementById('submit').disabled = false;
     };
 
-    axios
+    let data = {
+      name: name,
+      email: email,
+      comments: comments
+    };
+    fetch('/api/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+      .then(function(response) {
+        if (response.status >= 400) {
+          throw new Error('Bad response from server');
+        }
+        return response.json();
+      })
+      .then(function(data) {
+        submitComplete();
+        console.log(data);
+        if (data === 'success') {
+          console.log('Successful Update!');
+        }
+      })
+      .catch(function(err) {
+        console.log(err);
+      });
+
+    /*axios
       .post('/api/send', {
         name,
         email,
@@ -32,7 +61,7 @@ class ContactForm extends React.Component {
       .catch(function(error) {
         submitComplete();
         console.log(error);
-      });
+      });*/
   }
 
   render() {
