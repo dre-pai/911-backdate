@@ -44,9 +44,9 @@ class ContactForm extends React.Component {
           console.log('Successful Update!');
         }
       })
-      .catch(function(err) {
+      .catch(function(e) {
         submitComplete();
-        console.log(err);
+        console.log(e);
       });
 
     /*axios
