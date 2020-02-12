@@ -6,10 +6,7 @@ const bodyParser = require('body-parser');
 const index = require('./routes/index');
 
 const app = express();
-const nodemailer = require('nodemailer');
-const emailCredentials = require('./config.json');
 
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -20,41 +17,6 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
-app.post('/send', (req, res) => {
-  let name = req.body.name;
-  let email = req.body.email;
-  let message = req.body.comments;
-  let content = `Hello ${name}. Your email address is ${email}\n\n${message} `;
-
-  let transport = {
-    host: 'smtp.gmail.com',
-    auth: {
-      user: emailCredentials.email,
-      pass: emailCredentials.pass
-    }
-  };
-
-  let transporter = nodemailer.createTransport(transport);
-
-  let mail = {
-    from: `"911 Backdate Reservation Form" ${email}`,
-    to: email,
-    subject: 'New 911 Backdate Reservation Request',
-    text: content
-  };
-
-  transporter.sendMail(mail, (err, data) => {
-    if (err) {
-      res.json({
-        msg: 'fail'
-      });
-    } else {
-      res.json({
-        msg: 'success'
-      });
-    }
-  });
-});
 app.use('/images', express.static(path.join(__dirname, '/../public/images')));
 app.use('/api', index);
 app.get('*', (req, res) => {
