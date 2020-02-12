@@ -19,7 +19,7 @@ class ContactForm extends React.Component {
       document.getElementById('submit').disabled = false;
     };
 
-    /*let data = {
+    let data = {
       name: name,
       email: email,
       comments: comments
@@ -45,10 +45,11 @@ class ContactForm extends React.Component {
         }
       })
       .catch(function(err) {
+        submitComplete();
         console.log(err);
-      });*/
+      });
 
-    axios
+    /*axios
       .post('/api/send', {
         name,
         email,
@@ -61,7 +62,7 @@ class ContactForm extends React.Component {
       .catch(function(error) {
         submitComplete();
         console.log(error);
-      });
+      });*/
   }
 
   render() {
