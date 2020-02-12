@@ -10,9 +10,15 @@ router.post('/send', (req, res) => {
   let backdateEmail = 'infobackdate@gmail.com';
   let name = req.body.name;
   let clientEmail = req.body.email;
+  let clientPhone = req.body.phone;
   let message = req.body.comments;
   let subject = 'New 911 Backdate Reservation Request';
-  let content = `Hello ${name}. Your email address is ${clientEmail}\n\n${message} `;
+  let content = `A new 911 Backdate reservation form has been submitted.<br />
+                <br />
+                Name: ${name}<br />
+                Email: ${clientEmail}<br />
+                Phone: ${clientPhone}<br />
+                Message: ${message} `;
 
   sesClient.sendEmail(backdateEmail, subject, content, clientEmail);
 

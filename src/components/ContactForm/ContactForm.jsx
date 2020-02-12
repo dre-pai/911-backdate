@@ -23,6 +23,7 @@ class ContactForm extends React.Component {
       .post('/api/send', {
         name,
         email,
+        phone,
         comments
       })
       .then(function(response) {
