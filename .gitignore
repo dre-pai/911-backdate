@@ -6,7 +6,6 @@ package-lock.json
 
 # production
 /server/build
-/server/config.json
 /server/config.js
 
 # misc
