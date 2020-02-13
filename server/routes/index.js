@@ -25,8 +25,4 @@ router.post('/api/send', (req, res) => {
   res.send('Email is sent!');
 });
 
-router.get('*', (req, res) => {
-  res.sendFile('public/build/index.html', { root: global });
-});
-
 module.exports = router;
