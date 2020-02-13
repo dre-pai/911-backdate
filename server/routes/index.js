@@ -26,7 +26,7 @@ router.post('/api/send', (req, res) => {
 });
 
 router.get('*', (req, res) => {
-  res.sendFile('build/index.html', { root: global });
+  res.sendFile('public/build/index.html', { root: global });
 });
 
 module.exports = router;
