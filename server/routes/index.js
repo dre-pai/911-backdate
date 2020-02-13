@@ -2,15 +2,11 @@ const express = require('express');
 const router = express.Router();
 const sesClient = require('../ses-client');
 
-router.get('*', (req, res) => {
-  res.sendFile('build/index.html', { root: global });
-});
-
-router.get('/message', function(req, res, next) {
+router.get('/api/message', function(req, res, next) {
   res.json('Welcome To 911 Backdate');
 });
 
-router.post('/send', (req, res) => {
+router.post('/api/send', (req, res) => {
   let backdateEmail = 'infobackdate@gmail.com';
   let name = req.body.name;
   let clientEmail = req.body.email;
@@ -27,6 +23,10 @@ router.post('/send', (req, res) => {
   sesClient.sendEmail(backdateEmail, subject, content, clientEmail);
 
   res.send('Email is sent!');
+});
+
+router.get('*', (req, res) => {
+  res.sendFile('build/index.html', { root: global });
 });
 
 module.exports = router;
