@@ -22,10 +22,10 @@ class Reservations extends React.Component {
 
   render() {
     return (
-      <Row>
+      <Row className="grayRow">
         <Col>
-          <h1>Backdate Reservations</h1>
           <div id="formContainer">
+            <div id="formHeading">Backdate Reservations</div>
             {this.state.formSubmitted ? (
               <ThankYou />
             ) : (
