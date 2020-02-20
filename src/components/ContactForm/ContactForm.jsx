@@ -18,7 +18,10 @@ class ContactForm extends React.Component {
     document.getElementById('submit').disabled = false;
   };
 
-  submitSuccessful = () => document.getElementById('reservationForm').reset();
+  submitSuccessful = () => {
+    document.getElementById('reservationForm').reset();
+    this.props.updatePageStatus();
+  };
 
   updateFormState = response => {
     let errorFields = {};
