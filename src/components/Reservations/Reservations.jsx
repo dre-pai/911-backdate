@@ -37,10 +37,10 @@ class Reservations extends React.Component {
         </Row>
         <Row>
           <Col>
-            <Image src="images/front.jpg" fluid />
+            <Image src="images/backdate-colors/Azure-Blue.jpg" fluid />
           </Col>
           <Col>
-            <Image src="images/rear.jpg" fluid />
+            <Image src="images/backdate-colors/White.jpg" fluid />
           </Col>
         </Row>
       </div>
