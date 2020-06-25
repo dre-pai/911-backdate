@@ -8,7 +8,7 @@ class Reservations extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      formSubmitted: false
+      formSubmitted: false,
     };
 
     this.updatePageStatus = this.updatePageStatus.bind(this);
@@ -16,7 +16,7 @@ class Reservations extends React.Component {
 
   updatePageStatus() {
     this.setState({
-      formSubmitted: true
+      formSubmitted: true,
     });
   }
 

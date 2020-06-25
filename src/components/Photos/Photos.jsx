@@ -7,7 +7,7 @@ class Photos extends React.Component {
   render() {
     let images = [];
 
-    for (let i = 1; i < 125; i++) {
+    for (let i = 1; i < 153; i++) {
       let src = `images/gallery/g (${i}).jpg`;
 
       let obj = {};

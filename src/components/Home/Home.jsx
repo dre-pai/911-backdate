@@ -10,7 +10,7 @@ class Home extends React.Component {
           <Image
             id="hero-img"
             className="img-full"
-            src="images/backdate-colors/Azure-Blue.jpg"
+            src="images/home-blue.jpg"
           />
         </Row>
         <Row className="mobile-photos">

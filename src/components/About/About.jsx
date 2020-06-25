@@ -7,15 +7,7 @@ class About extends React.Component {
       <div className="container-md">
         <Row>
           <Col>
-            <Image src="images/front.jpg" fluid />
-          </Col>
-          <Col>
-            <Image src="images/rear.jpg" fluid />
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Image src="images/vision-red.jpg" fluid />
+            <Image src="images/vision-blue.jpg" fluid />
           </Col>
         </Row>
         <Row>
@@ -83,6 +75,19 @@ class About extends React.Component {
               learning more, please feel free to contact us, and we would be
               happy to discuss your vision for your very own 911 Backdate.
             </p>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image src="images/res-interior.jpg" fluid />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image src="images/front.jpg" fluid />
+          </Col>
+          <Col>
+            <Image src="images/rear.jpg" fluid />
           </Col>
         </Row>
       </div>
