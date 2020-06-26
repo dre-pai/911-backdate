@@ -82,14 +82,6 @@ class About extends React.Component {
             <Image src="images/res-interior.jpg" fluid />
           </Col>
         </Row>
-        <Row>
-          <Col>
-            <Image src="images/front.jpg" fluid />
-          </Col>
-          <Col>
-            <Image src="images/rear.jpg" fluid />
-          </Col>
-        </Row>
       </div>
     );
   }
