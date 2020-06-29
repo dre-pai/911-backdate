@@ -38,7 +38,7 @@ class Process extends React.Component {
               </Card.Text>
             </Card.Body>
             <Card>
-              <Card.Img className="img-full" src="images/car-3.jpg" />
+              <Card.Img className="img-full" src="images/drawing-green.jpg" />
             </Card>
           </Col>
         </Row>
