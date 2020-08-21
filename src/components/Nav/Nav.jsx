@@ -8,7 +8,7 @@ export default class Navigation extends React.Component {
     super(props);
 
     this.state = {
-      isExpanded: false
+      isExpanded: false,
     };
 
     this.checkState = this.checkState.bind(this);
@@ -23,14 +23,14 @@ export default class Navigation extends React.Component {
   hideNav = () => {
     if (this.state.isExpanded) {
       this.setState({
-        isExpanded: false
+        isExpanded: false,
       });
     }
   };
 
   showNav = () => {
     this.setState({
-      isExpanded: true
+      isExpanded: true,
     });
   };
 
@@ -45,7 +45,7 @@ export default class Navigation extends React.Component {
           className="container-md"
         >
           <Navbar.Brand as={NavLink} to="/" onClick={this.hideNav}>
-            <Image src="/images/logos/911-backdate-gold-car.jpg" fluid />
+            <Image src="/images/logos/911-backdate-gold.png" fluid />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
