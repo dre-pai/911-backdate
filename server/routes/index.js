@@ -2,21 +2,24 @@ const express = require('express');
 const router = express.Router();
 const sesClient = require('../ses-client');
 const { check, validationResult } = require('express-validator');
+const fs = require('fs');
 
-router.get('/api/message', function(req, res, next) {
+router.get('/api/message', function (req, res, next) {
   res.json('Welcome To 911 Backdate');
+});
+
+router.get('/api/images', (req, res) => {
+  let dir = './public/images/gallery/' + req.query.folder;
+
+  fs.readdir(dir, (err, files) => res.json(files));
 });
 
 router.post(
   '/api/send',
   [
     check('email').isEmail(),
-    check('firstName')
-      .not()
-      .isEmpty(),
-    check('lastName')
-      .not()
-      .isEmpty()
+    check('firstName').not().isEmpty(),
+    check('lastName').not().isEmpty(),
   ],
   (req, res) => {
     const errors = validationResult(req);

@@ -8,6 +8,29 @@
   margin: 0 3px !important;
 }
 
+h4 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 100;
+  margin: 10px 0 30px;
+}
+
+#projectRow {
+  padding-bottom: 35px;
+}
+
+#projectRow img:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+#projectRow img {
+  transition: all 0.5s;
+}
+#projectRow .col div {
+  background: #000;
+}
+
 @media (max-width: 580px) {
   .ReactGridGallery_tile-viewport {
     height: auto !important;
