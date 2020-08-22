@@ -13,10 +13,6 @@ class Photos extends React.Component {
   }
 
   galleryClick(selectedGallery) {
-    this.setState({
-      images: [],
-    });
-
     let data = [];
     const src = 'images/gallery/' + selectedGallery + '/';
     axios.get('/api/images?folder=' + selectedGallery).then((res) => {
@@ -28,6 +24,7 @@ class Photos extends React.Component {
         });
       }
 
+      console.log(data);
       this.setState({
         images: data,
       });
