@@ -24,7 +24,6 @@ class Photos extends React.Component {
         });
       }
 
-      console.log(data);
       this.setState({
         images: data,
       });
