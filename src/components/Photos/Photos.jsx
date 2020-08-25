@@ -43,7 +43,7 @@ class Photos extends React.Component {
             <div>
               <Image
                 onClick={() => this.galleryClick('blue-backdate')}
-                src="images/gallery/blue-backdate/g (27).jpg"
+                src="images/gallery/blue-backdate//IMG_9249.jpg"
                 fluid
               />
             </div>
