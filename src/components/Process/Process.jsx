@@ -54,7 +54,7 @@ class Process extends React.Component {
           </Col>
           <Col md>
             <Card>
-              <Card.Img src="images/process-2.jpg" />
+              <Card.Img src="images/engine.jpg" />
             </Card>
             <Card.Body>
               <Card.Title>Performance Modification</Card.Title>
@@ -76,7 +76,7 @@ class Process extends React.Component {
           </Col>
           <Col md>
             <Card>
-              <Card.Img src="images/process-3.jpg" />
+              <Card.Img src="images/body.jpg" />
             </Card>
             <Card.Body>
               <Card.Title>Exterior Style Components</Card.Title>
@@ -126,36 +126,63 @@ class Process extends React.Component {
         </Row>
         <Row>
           <Col>
-            <Image fluid src="images/detail-2.jpg" />
+            <Image fluid src="images/cf-handle.jpg" />
           </Col>
           <Col>
-            <Image fluid src="images/detail-1.jpg" />
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Image fluid src="images/detail-3.jpg" />
-          </Col>
-          <Col>
-            <Image fluid src="images/detail-4.jpg" />
+            <Image fluid src="images/exhaust.jpg" />
           </Col>
         </Row>
         <Row>
           <Col>
-            <Image fluid src="images/detail-5.jpg" />
+            <Image fluid src="images/chip.jpg" />
           </Col>
           <Col>
-            <Image fluid src="images/detail-6.jpg" />
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Image fluid src="images/detail-7.jpg" />
+            <Image fluid src="images/light.jpg" />
           </Col>
         </Row>
         <Row>
           <Col>
-            <Image fluid src="images/detail-8.jpg" />
+            <Image fluid src="images/knob.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/samples.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/samples2.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/weave.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/stitching.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/panel.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/drawing2.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/wheel.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/tips.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/rear-lift.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/project-on-lift.jpg" />
           </Col>
         </Row>
       </div>
