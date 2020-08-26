@@ -16,6 +16,8 @@ class Photos extends React.Component {
     let data = [];
     const src = 'images/gallery/' + selectedGallery + '/';
     axios.get('/api/images?folder=' + selectedGallery).then((res) => {
+      document.getElementById('ReactGridGallery').scrollIntoView();
+
       for (let i = 0; i < res.data.length; i++) {
         let val = src + res.data[i];
         data.push({
