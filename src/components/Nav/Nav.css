@@ -3,8 +3,9 @@
   margin: 0;
 }
 
-.navbar {
-  letter-spacing: 1px;
+nav.navbar {
+  margin: 0 -15px;
+  padding: 5px 15px 15px 15px;
 }
 
 nav.container-md {
@@ -48,9 +49,7 @@ nav.container-md {
     padding-left: 0.65rem;
   }
   .navbar {
-    padding: 0.25em 1em 1.25em 1em;
     display: flex;
-    margin: 0;
     flex-direction: column;
     font-size: 0.9em;
     letter-spacing: 1px;
