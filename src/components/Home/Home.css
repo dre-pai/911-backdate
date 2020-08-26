@@ -15,7 +15,7 @@
 }
 
 #orders {
-  padding-bottom: 40px;
+  padding-bottom: 25px;
 }
 
 .orders-text {
@@ -51,6 +51,10 @@
 }
 
 @media (max-width: 600px) {
+  #hero-img {
+    padding-top: 15px;
+  }
+
   #orders-now {
     margin-top: 25px;
     letter-spacing: 4px;
