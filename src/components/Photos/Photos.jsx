@@ -43,7 +43,7 @@ class Photos extends React.Component {
             <div>
               <Image
                 onClick={() => this.galleryClick('blue-backdate')}
-                src="images/gallery/blue-backdate//IMG_9249.jpg"
+                src="images/backdate-blue-thumb.jpg"
                 fluid
               />
             </div>
@@ -52,7 +52,7 @@ class Photos extends React.Component {
             <div>
               <Image
                 onClick={() => this.galleryClick('red-backdate')}
-                src="images/gallery/red-backdate/g (138).jpg"
+                src="images/backdate-red-thumb.jpg"
                 fluid
               />
             </div>
@@ -61,7 +61,7 @@ class Photos extends React.Component {
             <div>
               <Image
                 onClick={() => this.galleryClick('gray-backdate')}
-                src="images/gallery/gray-backdate/g (99).jpg"
+                src="images/backdate-gray-thumb.jpg"
                 fluid
               />
             </div>
