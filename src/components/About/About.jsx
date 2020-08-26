@@ -7,7 +7,7 @@ class About extends React.Component {
       <div className="container-md">
         <Row>
           <Col>
-            <Image src="images/green-gold-wheels.jpg" fluid />
+            <Image src="images/blue-backdate-back.jpg" fluid />
           </Col>
         </Row>
         <Row>

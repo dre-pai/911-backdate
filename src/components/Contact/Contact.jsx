@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faMapMarkerAlt,
   faPhone,
-  faEnvelope
+  faEnvelope,
 } from '@fortawesome/free-solid-svg-icons';
 import './Contact.css';
 
@@ -40,7 +40,7 @@ class Contact extends React.Component {
         </Row>
         <Row className="contact-img-row">
           <Col>
-            <Image fluid src="images/blue-rear.jpg" />
+            <Image fluid src="images/detail-8.jpg" />
           </Col>
         </Row>
       </div>

@@ -44,9 +44,8 @@ nav.container-md {
     transform: scaleX(1);
   }
 
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0.65rem;
-    padding-left: 0.65rem;
+  .nav-link {
+    padding: 0.5em 1.15em !important;
   }
   .navbar {
     display: flex;
