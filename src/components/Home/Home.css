@@ -23,19 +23,30 @@
   width: 100%;
   text-align: center;
   text-transform: uppercase;
-  width: 100%;
 }
 
 #orders-now {
-  letter-spacing: 6px;
-  font-size: 2em;
-  color: #535484;
+  border: solid 3px #cea164;
+  border-radius: 6px;
+  width: auto !important;
+  padding: 10px 40px;
+  margin: 15px auto;
+  letter-spacing: 5px;
+  font-size: 1.75em;
+  color: #cea164;
+  transition: all 500ms;
+}
+
+#orders-now:hover {
+  cursor: pointer;
+  background: #cea164;
+  color: #fff;
 }
 
 #orders-limited {
   letter-spacing: 5px;
-  font-size: 1.5m;
-  color: #535484;
+  font-size: 0.75em;
+  color: #333;
 }
 
 @media (max-width: 600px) {

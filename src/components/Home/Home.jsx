@@ -22,8 +22,8 @@ class Home extends React.Component {
           </Col>
         </Row>
         <Row id="orders">
-          <p id="orders-now">- Now Taking Orders -</p>
-          <p id="orders-limited">Limited Production</p>
+          <p id="orders-now">Now Taking Orders</p>
+          <p id="orders-limited">- Limited Production -</p>
         </Row>
       </div>
     );

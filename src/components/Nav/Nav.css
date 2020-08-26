@@ -7,6 +7,10 @@
   letter-spacing: 1px;
 }
 
+nav.container-md {
+  background: #eee;
+}
+
 @media (min-width: 992px) {
   .nav-link {
     position: relative;
