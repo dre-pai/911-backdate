@@ -18,7 +18,7 @@
   padding-bottom: 40px;
 }
 
-#orders p {
+.orders-text {
   font-family: 'Montserrat', sans-serif;
   width: 100%;
   text-align: center;
@@ -29,6 +29,7 @@
   border: solid 3px #cea164;
   border-radius: 6px;
   width: auto !important;
+  text-decoration: none;
   padding: 10px 40px;
   margin: 15px auto;
   letter-spacing: 5px;
@@ -51,8 +52,9 @@
 
 @media (max-width: 600px) {
   #orders-now {
-    padding-top: 60px;
-    letter-spacing: 5px;
+    margin-top: 25px;
+    letter-spacing: 4px;
+    padding: 10px 25px;
     font-size: 1.1em;
   }
 
