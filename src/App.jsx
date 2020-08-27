@@ -13,7 +13,9 @@ class App extends React.Component {
       .setAttribute('style', `min-height: ${vh}px`);
 
     window.addEventListener('resize', () =>
-      document.getElementById('container').removeAttribute('style')
+      document
+        .getElementById('container')
+        .setAttribute('style', `min-height: ${vh}px`)
     );
   }
 
