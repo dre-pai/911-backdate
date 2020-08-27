@@ -6,9 +6,16 @@ import Routes from './components/Routes/Routes';
 import Footer from './components/Footer/Footer';
 
 class App extends React.Component {
+  componentDidMount() {
+    let vh = window.innerHeight;
+    document
+      .getElementById('container')
+      .setAttribute('style', `min-height: ${vh}px`);
+  }
+
   render() {
     return (
-      <Container>
+      <Container id="container">
         <Navigation />
         <div className="page-content">
           <Routes />
