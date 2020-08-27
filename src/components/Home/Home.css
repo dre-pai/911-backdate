@@ -12,10 +12,9 @@
   .mobile-photos {
     display: none;
   }
-}
-
-#orders {
-  padding-bottom: 25px;
+  #orders {
+    padding-bottom: 25px;
+  }
 }
 
 .orders-text {
