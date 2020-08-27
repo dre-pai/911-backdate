@@ -7,15 +7,14 @@ import Footer from './components/Footer/Footer';
 
 class App extends React.Component {
   componentDidMount() {
-    let vh = window.innerHeight;
     document
       .getElementById('container')
-      .setAttribute('style', `min-height: ${vh}px`);
+      .setAttribute('style', `min-height: ${window.innerHeight}px`);
 
     window.addEventListener('resize', () =>
       document
         .getElementById('container')
-        .setAttribute('style', `min-height: ${vh}px`)
+        .setAttribute('style', `min-height: ${window.innerHeight}px`)
     );
   }
 
