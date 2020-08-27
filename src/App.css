@@ -3,13 +3,12 @@
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  min-height: calc(var(--vh, 1vh) * 100);
+  min-height: 100vh;
   max-width: 100%;
 }
 
 .page-content {
-  flex: 1;
+  flex: 1 0 auto;
   max-width: 1400px;
   margin: 0 auto;
 }
