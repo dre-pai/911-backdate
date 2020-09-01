@@ -13,67 +13,60 @@ class About extends React.Component {
         <Row>
           <Col>
             <p>
-              <b>
-                If you have ever had a vision, you know that it began with
-                inspiration. The 911 Backdate is no exception, and to this we
-                owe tremendous gratitude to the designers, artists, and
-                innovators who began this trend and paved the way before us.
-              </b>
+              The 911 Backdate project was inspired by overwhelming feedback
+              from our clients expressing a fervent desire to own a fully
+              restored and customized classic air-cooled Porsche 911. They are
+              members of a new sect of Porsche enthusiasts, one less concerned
+              with collecting an air-cooled 911 and more interested in the
+              experience and thrill of driving one. To own and drive a classic
+              air-cooled Porsche that is uniquely stylized, in all of its
+              original mechanical splendor, and blushing with the vitality of
+              youth is a life-long dream realized for the avid fan whose first
+              indelible Porsche impressions often go back as far as adolescence.
             </p>
             <p>
-              If you truly love the world of motorsports and racing, there is no
-              denying that the classic Porsche 911 holds an indelible place in
-              history for its achievements in the world of race engineering. For
-              most of us it holds a place in the deep nostalgic recesses of
-              childhood memories thanks to innumerable Hollywood cameos and its
-              star-studded ownership. And it must certainly hold a place of
-              reverence in our minds for its uncanny ability to maintain such
-              allure, sophistication, admiration, and sex appeal for well beyond
-              5 decades. The fact that the air-cooled engine has not been in
-              production since most of us reached puberty is the final, case
-              winning evidence for the argument of preservation.
+              The acceptance of any modification to a classic 911 by a tribe so
+              staunchly devoted to preservation was initially quite difficult to
+              comprehend, however it gradually became clear to us that this idea
+              of a revised Porsche 911 was in effect a form of preservation,
+              albeit not in the proverbial sense of the word. The 911 Backdate
+              is a marriage of 2 beloved eras of the classic air-cooled 911 –
+              the 1970’s ST and the 964 of the 1990’s. We often say we wish we
+              knew then what we do now and the pairing of these 2 classic
+              Porsche models seamlessly achieves this. The ST was born during a
+              period in automotive history prodigious with innovation in
+              artistry and design. Its visual appeal is timeless, handsome, and
+              distinguished. It has smooth lines and soft curved surfaces
+              delicately embellished with staccatos of finely polished mirrors,
+              moldings, and trims, and the wider proportions of its rear view
+              creates a visage that is irresistibly likable. The 964 is revered
+              for its achievements in race engineering, a culmination of 30
+              years of Porsche technical evolution. It is easy to handle, safety
+              enhanced, and wickedly fast, delivering the ultimate air-cooled
+              911 driving experience.
             </p>
             <p>
-              However, there is a deep sadness at the thought of leaving these
-              iconic road marvels to sit idle, untouched, unseen, and often
-              undriven. Condition 1 and 2 examples, yes, they are relics, pieces
-              of art, and it must be so. But for the high-mileage examples on
-              the market that are in dire need of an engine restoration and
-              interior refresh, the concept of a completely customized OEM
-              resto-mod felt like a waking dream and no doubt answered the
-              prayers for many a Porsche enthusiast.
+              There is a metamorphosis that occurs with the marriage of these
+              two classic favorites and it is spectacular. The end product is a
+              complete transformation from a neglected 964 into a fully realized
+              and restored machine with a revised exterior and interior
+              aesthetic that is truly a reverent homage to the ST of the 1970’s.
+              Throughout the restoration the 964 remains authentic with a
+              matching numbers engine rebuild, tasteful performance upgrades,
+              and a puritan-like devotion to its veritable history with every
+              genuine OEM replacement part. The interior is transformed from a
+              rather mundane existence of basic design and materials into a
+              salon of rich hand-stitched Italian hides and elegant finishes,
+              all the while maintaining respect for the Porsche heritage of
+              minimalism and function.
             </p>
             <p>
-              For our clients, it really feels like a wish come true when the
-              911 Backdate reaches completion. A Porsche 964 uniquely their own
-              that is meant to be seen and enjoyed, but most importantly, meant
-              to be driven. This is our vision. Providing this kind of
-              satisfaction for our die-hard Porsche enthusiast clientele is our
-              vision. Finding a level of restoration that fits the unique budget
-              of each customer is our vision. And maintaining the authenticity
-              and respect for the Porsche brand by priding ourselves in the
-              quality of our products and craftsmanship is our vision.
-            </p>
-            <p>
-              We achieve this by staying true to the classic architecture of the
-              1970 Porsche ST in our chassis modifications. The metal
-              conversion, and all interior and exterior components are replaced
-              with genuine Porsche and OEM parts if they are available on the
-              market. Only the finest materials are used in all areas of each
-              custom project, and all alterations to the original are both
-              tasteful and historically accurate. While certain design elements
-              and features are proprietary in nature and are present in every
-              Backdate 911, most style options and performance modifications are
-              unique to its owner, making each version one-of-a-kind.
-            </p>
-            <p>
-              It is a shared passion for Porsche that brings us together with
-              our customers and it is our hope that each 911 Backdate will be
-              treasured by our clients for not only the quality and
-              craftsmanship, but also for the pleasure they experience by being
-              artistically involved in its creation. If you are interested in
-              learning more, please feel free to contact us, and we would be
-              happy to discuss your vision for your very own 911 Backdate.
+              The final and stunning bespoke example is the result of a
+              successful collaboration with our buyer. It is a treasure that
+              will be enjoyed for a lifetime. This is the passion that we share
+              with our clients and which compels us to continuously create and
+              evolve. We look forward to the inevitable innovation that the next
+              911 Backdate will inspire.
             </p>
           </Col>
         </Row>
