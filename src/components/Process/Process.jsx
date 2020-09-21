@@ -70,6 +70,7 @@ class Process extends React.Component {
                   <li>Exhaust Conversion to Dual Center Pipe</li>
                   <li>Suspension</li>
                   <li>Brakes</li>
+                  <li>Engine power kits and management system</li>
                 </ul>
               </Card.Text>
             </Card.Body>
