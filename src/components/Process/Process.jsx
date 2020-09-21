@@ -126,63 +126,111 @@ class Process extends React.Component {
         </Row>
         <Row>
           <Col>
-            <Image fluid src="images/cf-handle.jpg" />
+            <Image fluid src="images/customization/cf-handle.jpg" />
           </Col>
           <Col>
-            <Image fluid src="images/exhaust.jpg" />
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Image fluid src="images/chip.jpg" />
-          </Col>
-          <Col>
-            <Image fluid src="images/light.jpg" />
+            <Image fluid src="images/customization/exhaust.jpg" />
           </Col>
         </Row>
         <Row>
           <Col>
-            <Image fluid src="images/knob.jpg" />
+            <Image fluid src="images/customization/chip.jpg" />
           </Col>
           <Col>
-            <Image fluid src="images/samples.jpg" />
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Image fluid src="images/samples2.jpg" />
-          </Col>
-          <Col>
-            <Image fluid src="images/weave.jpg" />
+            <Image fluid src="images/customization/light.jpg" />
           </Col>
         </Row>
         <Row>
           <Col>
-            <Image fluid src="images/stitching.jpg" />
+            <Image fluid src="images/customization/knob.jpg" />
           </Col>
           <Col>
-            <Image fluid src="images/panel.jpg" />
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Image fluid src="images/drawing2.jpg" />
-          </Col>
-          <Col>
-            <Image fluid src="images/wheel.jpg" />
+            <Image fluid src="images/customization/samples.jpg" />
           </Col>
         </Row>
         <Row>
           <Col>
-            <Image fluid src="images/tips.jpg" />
+            <Image fluid src="images/customization/samples2.jpg" />
           </Col>
           <Col>
-            <Image fluid src="images/rear-lift.jpg" />
+            <Image fluid src="images/customization/weave.jpg" />
           </Col>
         </Row>
         <Row>
           <Col>
-            <Image fluid src="images/project-on-lift.jpg" />
+            <Image fluid src="images/customization/stitching.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/customization/panel.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/customization/drawing2.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/customization/wheel.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/customization/clamps.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/customization/coilover.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/customization/cooler.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/customization/filter.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/customization/intake.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/customization/lines.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/customization/metal.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/customization/metal2.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/customization/pieces.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/customization/pipe.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/customization/mirrors.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/customization/mag.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/customization/tips.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/customization/rear-lift.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/customization/project-on-lift.jpg" />
           </Col>
         </Row>
       </div>
