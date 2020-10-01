@@ -221,6 +221,64 @@ class Process extends React.Component {
             <Image fluid src="images/customization/mag.jpg" />
           </Col>
         </Row>
+
+        <Row>
+          <Col>
+            <Image fluid src="images/customization/chrome-mirror.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/customization/chrome-mirrors.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/customization/components.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/customization/components-close.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/customization/clutch.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/customization/exh.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/customization/fan.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/customization/housing.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/customization/int.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/customization/mat.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/customization/mech.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/customization/pump.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/customization/sidemarker.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/customization/sway-bar.jpg" />
+          </Col>
+        </Row>
+
         <Row>
           <Col>
             <Image fluid src="images/customization/tips.jpg" />
