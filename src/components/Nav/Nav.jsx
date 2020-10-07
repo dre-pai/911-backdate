@@ -68,6 +68,9 @@ export default class Navigation extends React.Component {
               <Nav.Link as={NavLink} to="/engine" onClick={this.hideNav}>
                 Engine Specs
               </Nav.Link>
+              <Nav.Link as={NavLink} to="/design" onClick={this.hideNav}>
+                Design
+              </Nav.Link>
               <Nav.Link as={NavLink} to="/photos" onClick={this.hideNav}>
                 Photos
               </Nav.Link>
