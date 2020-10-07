@@ -1,5 +1,8 @@
-#design-img {
-  max-width: 750px;
-  padding: 25px 10px;
-  width: 100%;
+@media only screen and (min-width: 992px) {
+  #design-img-row img {
+    padding: 25px 25%;
+  }
+}
+#design-img-row {
+  background-color: #ddd;
 }

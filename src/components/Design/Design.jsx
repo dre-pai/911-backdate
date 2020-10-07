@@ -6,9 +6,9 @@ class Design extends React.Component {
   render() {
     return (
       <div>
-        <Row>
+        <Row id="design-img-row">
           <Col>
-            <Image id="design-img" fluid src="images/design.png" />
+            <Image fluid src="images/design.png" />
           </Col>
         </Row>
         <Row>
