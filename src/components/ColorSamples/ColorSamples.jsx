@@ -21,9 +21,9 @@ class ColorSamples extends React.Component {
             <Image
               id="colorImage"
               fluid
-              src="images/backdate-colors/Salmon.jpg"
+              src="images/backdate-colors/Orange-Metalic.jpg"
             />
-            <div id="colorName">Salmon</div>
+            <div id="colorName">Orange Metalic</div>
           </Col>
         </Row>
         <Row className="colorRow">
