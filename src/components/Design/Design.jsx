@@ -11,6 +11,11 @@ class Design extends React.Component {
             <Image fluid src="images/design.png" />
           </Col>
         </Row>
+        <Row className="text-center">
+          <Col>
+            <Image fluid src="images/design-body.jpg" />
+          </Col>
+        </Row>
         <Row>
           <Col>
             <h4>Coming Soon...</h4>

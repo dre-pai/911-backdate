@@ -11,6 +11,14 @@ class Engine extends React.Component {
           </Col>
         </Row>
         <Row>
+        <Col>
+            <Image fluid src="images/block.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/block2.jpg" />
+          </Col>
+        </Row>
+        <Row>
           <Col>
             <h4>Engine Spes Coming Soon...</h4>
           </Col>
