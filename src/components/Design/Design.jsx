@@ -13,7 +13,7 @@ class Design extends React.Component {
         </Row>
         <Row className="text-center">
           <Col>
-            <Image fluid src="images/design-body.jpg" />
+            <Image fluid src="images/design-body-render.jpg" />
           </Col>
         </Row>
         <Row>
