@@ -278,7 +278,22 @@ class Process extends React.Component {
             <Image fluid src="images/customization/sway-bar.jpg" />
           </Col>
         </Row>
-
+        <Row>
+          <Col>
+            <Image fluid src="images/customization/nuts.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/customization/plates.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/customization/seat-front.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/customization/seat-rear.jpg" />
+          </Col>
+        </Row>
         <Row>
           <Col>
             <Image fluid src="images/customization/tips.jpg" />

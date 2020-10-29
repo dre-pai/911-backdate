@@ -7,13 +7,11 @@ class Design extends React.Component {
     return (
       <div>
         <Row id="design-img-row">
-          <Col>
-            <Image fluid src="images/design.png" />
+        <Col>
+            <Image fluid src="images/des-rear.jpg" />
           </Col>
-        </Row>
-        <Row className="text-center">
           <Col>
-            <Image fluid src="images/design-body-render.jpg" />
+            <Image fluid src="images/des-pro.jpg" />
           </Col>
         </Row>
         <Row>
