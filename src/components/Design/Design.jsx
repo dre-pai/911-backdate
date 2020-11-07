@@ -6,12 +6,20 @@ class Design extends React.Component {
   render() {
     return (
       <div>
-        <Row id="design-img-row">
-        <Col>
+        <Row>
+          <Col>
             <Image fluid src="images/des-rear.jpg" />
           </Col>
           <Col>
             <Image fluid src="images/des-pro.jpg" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image fluid src="images/silv-front.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/silv-rear.jpg" />
           </Col>
         </Row>
         <Row>
