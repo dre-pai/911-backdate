@@ -7,7 +7,7 @@ class Home extends React.Component {
     return (
       <div>
         <Row id="hero-container">
-          <video id="hero" src="videos/blue360.mp4" autoplay="autoplay" loop="loop" muted="muted"></video>
+          <video id="hero" src="videos/blue360.mp4" playsinline  autoplay="autoplay" loop="loop" muted="muted"></video>
         </Row>
         <Row id="orders">
           <a href="/reservations" id="orders-now" className="orders-text">
