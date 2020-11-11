@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row } from 'react-bootstrap';
+import { Row, Col, Image } from 'react-bootstrap';
 import './Home.css';
 
 class Home extends React.Component {
@@ -11,7 +11,15 @@ class Home extends React.Component {
     return (
       <div>
         <Row id="hero-container">
-          <video id="hero" src="videos/blue360.mp4" playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted"></video>
+          <video src="videos/blue360.mp4" id="hero" playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted"></video>
+        </Row>
+        <Row className="mobile-photos">
+          <Col>
+            <Image fluid src="images/front.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/rear.jpg" />
+          </Col>
         </Row>
         <Row id="orders">
           <a href="/reservations" id="orders-now" className="orders-text">

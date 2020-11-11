@@ -9,6 +9,9 @@
 }
 
 @media (min-width: 601px) {
+  .mobile-photos {
+    display: none;
+  }
   #orders {
     padding-bottom: 25px;
   }
