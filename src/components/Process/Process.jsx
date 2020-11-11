@@ -30,7 +30,7 @@ class Process extends React.Component {
                   <i>
                     *The 964 has specifically been chosen due to its
                     aerodynamics, 3.6L engine, ABS brakes, automatic electric
-                    spoiler and functional air-conditioning, amongst other
+                    spoiler, and functional air-conditioning, amongst other
                     technological advancements that set it apart from its
                     predecessors.
                   </i>
@@ -70,7 +70,7 @@ class Process extends React.Component {
                   <li>Exhaust Conversion to Dual Center Pipe</li>
                   <li>Suspension</li>
                   <li>Brakes</li>
-                  <li>Engine power kits and management system</li>
+                  <li>Engine Power Kits and Management System</li>
                 </ul>
               </Card.Text>
             </Card.Body>

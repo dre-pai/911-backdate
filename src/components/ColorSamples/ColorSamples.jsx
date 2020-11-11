@@ -23,7 +23,7 @@ class ColorSamples extends React.Component {
               fluid
               src="images/backdate-colors/Orange-Metalic.jpg"
             />
-            <div id="colorName">Orange Metalic</div>
+            <div id="colorName">Orange Metallic</div>
           </Col>
         </Row>
         <Row className="colorRow">
@@ -81,7 +81,7 @@ class ColorSamples extends React.Component {
             <Image
               fluid
               src="images/backdate-colors/Orange-Metalic.jpg"
-              alt="Orange Metalic"
+              alt="Orange Metallic"
               onClick={this.thumbnailClick}
             />
           </Col>
@@ -154,7 +154,7 @@ class ColorSamples extends React.Component {
             <Image
               fluid
               src="images/backdate-colors/Cognoac-Brown.jpg"
-              alt="Cognoac Brown"
+              alt="Cognac Brown"
               onClick={this.thumbnailClick}
             />
           </Col>
