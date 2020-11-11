@@ -1,17 +1,14 @@
-#hero-img {
-  max-width: 1400px;
+#hero {
+  width: 100%;
+  max-width: 1600px;
   align-self: center;
 }
 
-#hero-img-container {
+#hero-container {
   justify-content: center;
-  padding-bottom: 40px;
 }
 
 @media (min-width: 601px) {
-  .mobile-photos {
-    display: none;
-  }
   #orders {
     padding-bottom: 25px;
   }
@@ -50,10 +47,6 @@
 }
 
 @media (max-width: 600px) {
-  #hero-img {
-    padding-top: 15px;
-  }
-
   #orders-now {
     margin-top: 25px;
     letter-spacing: 4px;

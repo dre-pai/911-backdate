@@ -1,25 +1,13 @@
 import React from 'react';
-import { Row, Col, Image } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import './Home.css';
 
 class Home extends React.Component {
   render() {
     return (
       <div>
-        <Row id="hero-img-container">
-          <Image
-            id="hero-img"
-            className="img-full"
-            src="images\silv-front.jpg"
-          />
-        </Row>
-        <Row className="mobile-photos">
-          <Col>
-            <Image fluid src="images/front.jpg" />
-          </Col>
-          <Col>
-            <Image fluid src="images/rear.jpg" />
-          </Col>
+        <Row id="hero-container">
+          <video id="hero" src="videos/blue360.mp4" autoplay="autoplay" loop="loop" muted="muted"></video>
         </Row>
         <Row id="orders">
           <a href="/reservations" id="orders-now" className="orders-text">
