@@ -11,7 +11,12 @@ router.get('/api/message', function (req, res, next) {
 router.get('/api/images', (req, res) => {
   let dir = './public/images/gallery/' + req.query.folder;
 
-  fs.readdir(dir, (err, files) => res.json(files));
+  console.log(dir);
+
+  fs.readdir(dir, (err, files) => {
+    console.log(files);
+    res.json(files);
+  });
 });
 
 router.post(
