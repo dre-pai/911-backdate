@@ -11,14 +11,7 @@ router.get('/api/message', function (req, res, next) {
 router.get('/api/images', (req, res) => {
   let dir = './911-backdate/public/images/gallery/' + req.query.folder;
 
-  fs.readdir('./911-backdate', (err, a) => {
-    console.log(a);
-  });
-
-  fs.readdir(dir, (err, files) => {
-    console.log(files);
-    res.json(files);
-  });
+  fs.readdir(dir, (err, files) => res.json(files));
 });
 
 router.post(
