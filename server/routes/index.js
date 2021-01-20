@@ -13,7 +13,16 @@ router.get('/api/images', (req, res) => {
 
   console.log(dir);
 
+  fs.readdir('./', (err, a) => {
+    console.log(a);
+  });
+
+  fs.readdir('__dirname'  , (err, b) => {
+    console.log(b);
+  });
+
   fs.readdir(dir, (err, files) => {
+    console.log(err);
     console.log(files);
     res.json(files);
   });
