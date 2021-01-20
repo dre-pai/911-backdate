@@ -9,20 +9,13 @@ router.get('/api/message', function (req, res, next) {
 });
 
 router.get('/api/images', (req, res) => {
-  let dir = './public/images/gallery/' + req.query.folder;
+  let dir = './911-backdate/public/images/gallery/' + req.query.folder;
 
-  console.log(dir);
-
-  fs.readdir('./', (err, a) => {
+  fs.readdir('./911-backdate', (err, a) => {
     console.log(a);
   });
 
-  fs.readdir('__dirname'  , (err, b) => {
-    console.log(b);
-  });
-
   fs.readdir(dir, (err, files) => {
-    console.log(err);
     console.log(files);
     res.json(files);
   });
