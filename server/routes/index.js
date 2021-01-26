@@ -11,6 +11,8 @@ router.get('/api/message', function (req, res, next) {
 router.get('/api/images', (req, res) => {
   let dir = './911-backdate/public/images/gallery/' + req.query.folder;
 
+  if (!fs.existsSync(dir)) dir = './public/images/gallery/' + req.query.folder;
+
   fs.readdir(dir, (err, files) => res.json(files));
 });
 

@@ -16,8 +16,6 @@ class Photos extends React.Component {
     let data = [];
     const src = 'images/gallery/' + selectedGallery + '/';
     axios.get('/api/images?folder=' + selectedGallery).then((res) => {
-      console.log(res);
-      document.getElementById('ReactGridGallery').scrollIntoView();
 
       for (let i = 0; i < res.data.length; i++) {
         let val = src + res.data[i];
@@ -30,6 +28,10 @@ class Photos extends React.Component {
       this.setState({
         images: data,
       });
+
+      document.getElementById('ReactGridGallery').scrollIntoView();
+
+      setTimeout(() => document.getElementById('ReactGridGallery').scrollIntoView(), 1000);
     });
   }
 
@@ -41,7 +43,27 @@ class Photos extends React.Component {
             <h4>- Select a Project -</h4>
           </Col>
         </Row>
-        <Row id="projectRow">
+        <Row className="projectRow">
+          <Col>
+            <div>
+              <Image
+                onClick={() => this.galleryClick('gray-backdate')}
+                src="images/backdate-gray-thumb.jpg"
+                fluid
+              />
+            </div>
+          </Col>
+          <Col>
+            <div>
+              <Image
+                onClick={() => this.galleryClick('green-backdate')}
+                src="images/backdate-green-thumb.jpg"
+                fluid
+              />
+            </div>
+          </Col>
+        </Row>
+        <Row className="projectRow">
           <Col>
             <div>
               <Image
@@ -60,16 +82,8 @@ class Photos extends React.Component {
               />
             </div>
           </Col>
-          <Col>
-            <div>
-              <Image
-                onClick={() => this.galleryClick('gray-backdate')}
-                src="images/backdate-gray-thumb.jpg"
-                fluid
-              />
-            </div>
-          </Col>
         </Row>
+
         <ProjectGallery images={this.state.images} />
       </div>
     );

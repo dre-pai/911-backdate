@@ -1,1 +1,23 @@
 
+#design-wrap .col-sm {
+    padding: 0;
+}
+
+#design-wrap .row {
+    margin: 0;
+}
+
+.design-edition h4 {
+    margin: 35px 0 30px;
+}
+
+.design-edition {
+    padding: 15px 15px;
+    background: #eee;
+    margin: 15px 0;
+    border-radius: calc(.25rem - 1px);
+}
+
+#design-coming-soon {
+    margin: 40px 0 30px;
+}
