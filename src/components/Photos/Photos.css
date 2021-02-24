@@ -21,14 +21,16 @@ h4 {
 
 .projectRow img:hover {
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 0.85;
 }
 
 .projectRow img {
-  transition: all 0.5s;
+  transition: all 0.4s;
 }
 .projectRow .col div {
   background: #000;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 @media (max-width: 580px) {

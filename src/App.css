@@ -21,3 +21,9 @@
 .card-container {
   padding: 25px 0;
 }
+
+.vid-row video {
+  width: 100%;
+  max-width: 1600px;
+  align-self: center;
+}

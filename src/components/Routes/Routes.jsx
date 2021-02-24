@@ -5,6 +5,7 @@ import About from '../About/About';
 import Process from '../Process/Process';
 import Contact from '../Contact/Contact';
 import Photos from '../Photos/Photos';
+import Video from '../Video/Video';
 import Reservations from '../Reservations/Reservations';
 import ColorSamples from '../ColorSamples/ColorSamples';
 import Engine from '../Engine/Engine';
@@ -18,6 +19,7 @@ export default class Routes extends React.Component {
         <Route path="/customization" component={Process} />
         <Route path="/colorsamples" component={ColorSamples} />
         <Route path="/photos" component={Photos} />
+        <Route path="/video" component={Video} />
         <Route path="/engine" component={Engine} />
         <Route path="/design" component={Design} />
         <Route path="/about" component={About} />

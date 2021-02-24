@@ -3,13 +3,15 @@ import './About.css'
 import { Row, Col, Image } from 'react-bootstrap';
 
 class About extends React.Component {
+  componentDidMount() {
+    document.getElementById('vision-vid').play();
+  }
+
   render() {
     return (
       <div className="container-md">
-        <Row>
-          <Col>
-            <Image id="about-img-top" src="images/our-vision-2.jpg" fluid />
-          </Col>
+        <Row className="vid-row">
+          <video src="videos/blue360.mp4" id="vision-vid" playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted"></video>
         </Row>
         <Row>
           <Col>
@@ -69,6 +71,11 @@ class About extends React.Component {
               evolve. We look forward to the inevitable innovation that the next
               911 Backdate will inspire.
             </p>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image id="about-img-top" src="images/our-vision-2.jpg" fluid />
           </Col>
         </Row>
         <Row>
