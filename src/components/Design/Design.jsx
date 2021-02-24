@@ -9,10 +9,10 @@ class Design extends React.Component {
         <div class="design-edition">
           <Row>
             <Col sm>
-              <Image fluid src="images/des-green-front.jpg" />
+              <Image fluid src="images/des-green-front2.jpg" />
             </Col>
             <Col sm>
-              <Image fluid src="images/des-green-rear.jpg" />
+              <Image fluid src="images/des-green-rear2.jpg" />
             </Col>
           </Row>
           <h4>Sport Edition</h4>
