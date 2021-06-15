@@ -30,14 +30,14 @@ class Reservations extends React.Component {
               {this.state.formSubmitted ? (
                 <ThankYou />
               ) : (
-                  <ContactForm updatePageStatus={this.updatePageStatus} />
-                )}
+                <ContactForm updatePageStatus={this.updatePageStatus} />
+              )}
             </div>
           </Col>
         </Row>
         <Row>
           <Col>
-            <Image src="images/res-blue-oj.jpg" fluid />
+            <Image src="images/res-shop.jpg" fluid />
           </Col>
         </Row>
       </div>
