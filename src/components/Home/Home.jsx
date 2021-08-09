@@ -11,7 +11,7 @@ class Home extends React.Component {
     return (
       <div>
         <Row id="hero-container" className="vid-row">
-          <video src="videos/dkblue360.m4v" id="hero" playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted"></video>
+          <video src="videos/orange360.m4v" id="hero" playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted"></video>
         </Row>
         <Row className="mobile-photos">
           <Col>
