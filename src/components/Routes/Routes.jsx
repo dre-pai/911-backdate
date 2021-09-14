@@ -10,6 +10,7 @@ import Reservations from '../Reservations/Reservations';
 import ColorSamples from '../ColorSamples/ColorSamples';
 import Engine from '../Engine/Engine';
 import Design from '../Design/Design';
+import Specs from '../Specs/Specs';
 
 export default class Routes extends React.Component {
   render() {
@@ -24,6 +25,7 @@ export default class Routes extends React.Component {
         <Route path="/design" component={Design} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
+        <Route path="/specs" component={Specs} />
         <Route path="/reservations" component={Reservations} />
       </Switch>
     );

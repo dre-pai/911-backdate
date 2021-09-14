@@ -1,0 +1,41 @@
+.page-content {
+    display: block;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.accordion .accordion .card-header {
+    background: none;
+    border: none;
+    padding: .5rem;
+    font-weight: 500;
+}
+
+.accordion .accordion .card {
+    border: none;
+    border-bottom: 1px solid #e5e5e5 !important;
+    border-radius: 0;
+}
+.accordion .accordion .card-body {
+    padding: .5rem 1.25rem 1rem;
+}
+
+.accordion .accordion .card:last-child {
+    border-bottom: none !important;
+}
+
+.card-header:hover {
+    cursor: pointer;
+}
+
+.card-header {
+    position: relative;
+}
+
+.card-header::after {
+    content: "\f107";
+    color: #333;
+    right: 1.25rem;
+    position: absolute;
+    font-family: "FontAwesome"
+}
