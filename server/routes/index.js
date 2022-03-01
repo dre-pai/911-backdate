@@ -9,7 +9,7 @@ router.get('/api/message', function (req, res, next) {
 });
 
 router.get('/api/images', (req, res) => {
-  const dir = './911-backdate/public/images/gallery/' + req.query.folder
+  const dir = './public/images/gallery/' + req.query.folder
   /*const dir = fs.existsSync(dir) ?
     './911-backdate/public/images/gallery/' + req.query.folder :
     './public/images/gallery/' + req.query.folder;
