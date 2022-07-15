@@ -93,9 +93,16 @@ class Photos extends React.Component {
               />
             </div>
           </Col>
-          <Col></Col>
+          <Col>
+            <div>
+              <Image
+                onClick={() => this.galleryClick('grayblue-backdate')}
+                src="images/gallery/grayblue-backdate/IMG_2657.jpg"
+                fluid
+              />
+            </div>
+          </Col>
         </Row>
-
         <ProjectGallery images={this.state.images} />
       </div>
     );
