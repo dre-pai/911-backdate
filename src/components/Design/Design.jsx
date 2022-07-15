@@ -24,10 +24,10 @@ class Design extends React.Component {
           <h4>Super Sport Edition</h4>
           <Row>
             <Col sm>
-              <Image fluid src="images/des-rear.jpg" />
+              <Image fluid src="images/lb1.JPG" />
             </Col>
             <Col sm>
-              <Image fluid src="images/des-pro.jpg" />
+              <Image fluid src="images/lb2.JPG" />
             </Col>
           </Row>
         </div>
