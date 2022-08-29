@@ -5,7 +5,7 @@
 
 nav.navbar {
   margin: 0 -15px;
-  padding: 5px 15px 15px 15px;
+  padding: 8px 15px;
 }
 
 nav.container-md {
@@ -47,11 +47,12 @@ nav.container-md {
   .nav-link {
     padding: 0.5em 1.15em !important;
   }
+
   .navbar {
     display: flex;
     flex-direction: column;
-    font-size: 0.9em;
-    letter-spacing: 1px;
+    font-size: 0.78em;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -73,9 +74,11 @@ nav.container-md {
     margin: 0 auto;
     max-width: 375px;
   }
+
   button.navbar-toggler {
     margin-top: 25px;
   }
+
   .navbar-collapse {
     width: 100%;
   }
