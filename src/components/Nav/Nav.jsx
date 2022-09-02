@@ -62,9 +62,6 @@ export default class Navigation extends React.Component {
               <Nav.Link as={NavLink} to="/customization" onClick={this.hideNav}>
                 Customization
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/colorsamples" onClick={this.hideNav}>
-                Color Samples
-              </Nav.Link>
               <Nav.Link as={NavLink} to="/specs" onClick={this.hideNav}>
                 Specs
               </Nav.Link>

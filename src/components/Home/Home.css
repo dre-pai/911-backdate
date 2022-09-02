@@ -1,15 +1,13 @@
-#hero {
-  filter: brightness(105%) contrast(105%) saturate(110%);
-}
-
 #hero-container {
   justify-content: center;
+  margin-top: -25px;
 }
 
 @media (min-width: 601px) {
   .mobile-photos {
     display: none;
   }
+
   #orders {
     padding-bottom: 25px;
   }

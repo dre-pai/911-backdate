@@ -6,7 +6,7 @@ function Supersport() {
         <div className="container-ss">
             <Row className="vid-row" id="supersport-vid">
                 <h4>Supersport</h4>
-                <video src="videos/supersport360.mp4" playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted"></video>
+                <video src="videos/supersport360.mp4" playsInline="playsinline" autoPlay="autoplay" loop="loop" muted="muted"></video>
             </Row>
             <Row>
                 <Col>
@@ -14,37 +14,19 @@ function Supersport() {
                         <Image src="images/supersport-front.jpg" fluid />
                     </div>
                     <p className="first-p">
-                        The 911 Backdate project was inspired by overwhelming feedback
-                        from our clients expressing a fervent desire to own a fully
-                        restored and customized classic air-cooled Porsche 911. They are
-                        members of a new sect of Porsche enthusiasts, one less concerned
-                        with collecting an air-cooled 911 but more interested in the
-                        experience and thrill of driving one. To own and drive a classic
-                        air-cooled Porsche that is uniquely stylized, in all of its
-                        original mechanical splendor, and blushing with the vitality of
-                        youth is a life-long dream realized for the avid fan whose first
-                        indelible Porsche impressions often go back as far as adolescence.
+                        We are pleased to announce the launch of the SuperSport Backdate 911. Designed to be a modern interpretation of Porsche’s timeless long-hood body style, it has retained the signature retro 1970’s glam while embracing graciously proportioned aero dynamic body elements and modern innovative details.  The result is an enticing, high drama adaptation that is naturally smart and seriously sexy.
                     </p>
                     <p>
-                        The acceptance of any modification to a classic 911 by a tribe so
-                        staunchly devoted to preservation was initially quite difficult to
-                        comprehend; however, it gradually became clear to us that this idea
-                        of a revised Porsche 911 was in effect a form of preservation,
-                        albeit not in the proverbial sense of the word. The 911 Backdate
-                        is a marriage of 2 beloved eras of the classic air-cooled 911 –
-                        the 1970’s ST and the 964 of the 1990’s. We often say we wish we
-                        knew then what we know now and the pairing of these 2 classic
-                        Porsche models seamlessly achieves this. The ST was born during a
-                        period in automotive history prodigious with innovation in
-                        artistry and design. Its visual appeal is timeless, handsome, and
-                        distinguished. It has smooth lines and soft curved surfaces
-                        delicately embellished with staccatos of finely polished mirrors,
-                        moldings, and trims. Additionally, the wider proportions of its rear view
-                        creates a visage that is irresistibly likable. The 964 is revered
-                        for its achievements in race engineering, a culmination of 30
-                        years of Porsche technical evolution. It is easy to handle, safety
-                        enhanced, and wickedly fast, delivering the ultimate air-cooled
-                        911 driving experience.
+                        With the Supersport Backdate we have strived to make a statement while salvaging the purity and history of the vehicle’s original form.  From inspiration to installation, no attention to detail has been spared.  Beyond a vanity project, the SuperSport was born from a passionate devotion to improvement and innovation.  Characterized by its 991-inspired ducktail, low profile rocker panels, bespoke bumpers and custom diffuser, the Supersport has smoothly transitioned itself between decades of Porsche design without sacrificing material harmony. It is both cultivated and wild.
+                    </p>
+                    <p>
+                        While the exterior design indulges the appetite for a modernized stance and profile, the revision goes beyond pure ornamentation to achieve purpose and function.  The uniquely Supersport body style components are composed entirely of lightweight carbon fiber and have successfully decreased the total body weight.  Paired with other performance enhancements like the 3.9L twin-plug engine conversion and a lightweight flywheel and short shifter, overall horsepower has increased to 345, further elevating the already revelatory air-cooled driving experience.
+                    </p>
+                    <p>
+                        The underside of the vehicle harbors hidden details like stainless steel braided lines, an advanced Ohlins or Bilstein suspension system, Brembo GT brakes, a center exit exhaust and 935-inspired exhaust tips.  All underbody components are powder coated with various accents in the color(s) of choice, which brings us to....
+                    </p>
+                    <p>
+                        The biggest question, the toughest choice, often the most difficult decision – which colors to choose.  We offer color guidance when needed as well as a virtual color consultation, bringing any alluring color choice to life, whether it’s a favorite from history or a luxurious hue that is uniquely you. This is a tremendous aid in the decision-making process.
                     </p>
                 </Col>
             </Row>
@@ -54,33 +36,25 @@ function Supersport() {
                         <Image src="images/supersport-back.jpg" fluid />
                     </div>
                     <p>
-                        There is a metamorphosis that occurs with the marriage of these
-                        two classic favorites, and it is spectacular. The end product is a
-                        complete transformation from a neglected 964 into a fully realized
-                        and restored machine with a revised exterior and interior
-                        aesthetic that is truly a reverent homage to the ST of the 1970’s.
-                        Throughout the restoration, the 964 remains authentic with a
-                        matching numbers engine rebuild, tasteful performance upgrades,
-                        and a puritan-like devotion to its veritable history with every
-                        genuine OEM replacement part. The interior is transformed from a
-                        rather mundane existence of basic design and materials into a
-                        salon of rich hand-stitched Italian hides and elegant finishes,
-                        all the while maintaining respect for the Porsche heritage of
-                        minimalism and function.
+                        The cabin of the vehicle is entirely custom.  Each element of the interior is easily adapted to the preference of the client, from the bezels to styling of doors and dash, each detail part of its owner’s signature.  It begins with a generous leather-lined interior, indulgent while maintaining the charm of the early 911’s, with a basket weave dash insert and seat centers, metal grommets, and ornamentation reminiscent of a beautifully preserved classic. Meanwhile, carefully curated modern elements are infused throughout the cabin like the Porsche Radio with Bluetooth and Navigation and a new, (albeit retro-styled) A/C unit.
                     </p>
                     <p>
-                        The final and stunning bespoke example is the result of a
-                        successful collaboration with our buyer. It is a treasure that
-                        will be enjoyed for a lifetime. This is the passion that we share
-                        with our clients and which compels us to continuously create and
-                        evolve. We look forward to the inevitable innovation that the next
-                        911 Backdate will inspire.
+                        Other features within the cabin include the Momo steering wheel and Porsche horn button, instrument panel in the design of preference, a redesigned center console with wood engraved shifter and custom sport seats that comfortably envelop the driver. Carpeting and mats in performance fabric ensures durability.
+                    </p>
+                    <p>
+                        We also offer an interior for the Supersport that reflects a more modern aesthetic with features like a rear composite panel in lieu of the traditional seat arrangement, alternative leather styling, steering wheel, shifter, pedals, and more.
+                    </p>
+                    <p>
+                        Our clients are encouraged to share their design preferences as they embark with us on a creative endeavor to see their unique vision achieved and we are delighted to offer design advice to help with the decision-making process.  We understand that the aesthetic range can be vast and that each client is creating their own unique soundtrack.  In the end, the car should feel intimately yours, the interior should be a sanctuary, and the driving experience should make you feel like you’re living your best life.
+                    </p>
+                    <p>
+                        For more information you can reach us at info@abreumotors.com.
                     </p>
                 </Col>
             </Row>
             <Row>
                 <Col>
-                    <Image src="images/blue-supersport.jpg" fluid />
+                    <Image src="images/supersport-last.jpg" fluid />
                 </Col>
             </Row>
         </div>

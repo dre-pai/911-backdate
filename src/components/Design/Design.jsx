@@ -6,10 +6,7 @@ class Design extends React.Component {
   render() {
     return (
       <div id="design-wrap">
-        <Row className="vid-row">
-          <video src="videos/dkblue360.m4v" id="vision-vid" playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted"></video>
-        </Row>
-        <div class="design-edition">
+        <div className="design-edition">
           <h4>Sport Edition</h4>
           <Row>
             <Col sm>
@@ -20,18 +17,18 @@ class Design extends React.Component {
             </Col>
           </Row>
         </div>
-        <div class="design-edition">
+        <div className="design-edition">
           <h4>Super Sport Edition</h4>
           <Row>
             <Col sm>
-              <Image fluid src="images/lb1.JPG" />
+              <Image fluid src="images/ss1.jpg" />
             </Col>
             <Col sm>
-              <Image fluid src="images/lb2.JPG" />
+              <Image fluid src="images/ss2.jpg" />
             </Col>
           </Row>
         </div>
-        <div class="design-edition">
+        <div className="design-edition">
           <h4>Touring Edition</h4>
           <Row>
             <Col sm>

@@ -16,6 +16,7 @@
     border-bottom: 1px solid #e5e5e5 !important;
     border-radius: 0;
 }
+
 .accordion .accordion .card-body {
     padding: .5rem 1.25rem 1rem;
 }
@@ -38,4 +39,9 @@
     right: 1.25rem;
     position: absolute;
     font-family: "FontAwesome"
+}
+
+.spec-top {
+    text-align: center;
+    margin: -25px 0 25px;
 }

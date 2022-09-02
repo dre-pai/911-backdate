@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion } from 'react-bootstrap';
+import { Accordion, Row, Col, Image } from 'react-bootstrap';
 import './Specs.css';
 import AccordionItem from '../AccordionItem/AccordionItem.jsx'
 
@@ -7,6 +7,11 @@ class Specs extends React.Component {
   render() {
     return (
       <div>
+        <Row>
+          <Col className='spec-top'>
+            <Image src="images/dkojside.jpg" fluid />
+          </Col>
+        </Row>
         <Accordion>
           <AccordionItem header="Chassis" eventKey="0">
             <Accordion>
@@ -32,26 +37,26 @@ class Specs extends React.Component {
             </Accordion>
           </AccordionItem>
           <AccordionItem header="Mechanical" eventKey="1">
-              <p><i>*Engine machine work courtesy of our partnership with the esteemed engineers of E-Megatronic of Bridgeport, CT and Holleran’s Performance of Auburn, CA</i></p>
-              <p>Clients have the following options:</p>
-              <ul>
-                <li>Refresh of the Original 3.6L Engine</li>
-                <li>Complete Rebuild of the Original 3.6L Engine</li>
-                <li>Complete Rebuild of the Original Engine and Conversion from 3.6L to 3.8L Engine, increasing HP to 300 </li>
-                <li>Complete Rebuild of the Original Engine and Conversion from 3.6L to 3.9L Engine, increasing HP to 330</li>
-                <li>Refresh of the Original 5 speed G50 Transmission</li>
-                <li>Complete Rebuild of Original 5 speed G50 Transmission</li>
-                <li>Original Factory Exhaust </li>
-                <li>Bespoke Stainless Steel Center Muffler with Dual Exit Pipes and Catalytic Bypass </li>
-              </ul>
-              <p><i>All components are powder or ceramic coated.</i></p>
+            <p><i>*Engine machine work courtesy of our partnership with the esteemed engineers of E-Megatronic of Bridgeport, CT and Holleran’s Performance of Auburn, CA</i></p>
+            <p>Clients have the following options:</p>
+            <ul>
+              <li>Refresh of the Original 3.6L Engine</li>
+              <li>Complete Rebuild of the Original 3.6L Engine</li>
+              <li>Complete Rebuild of the Original Engine and Conversion from 3.6L to 3.8L Engine, increasing HP to 300 </li>
+              <li>Complete Rebuild of the Original Engine and Conversion from 3.6L to 3.9L Engine, increasing HP to 330</li>
+              <li>Refresh of the Original 5 speed G50 Transmission</li>
+              <li>Complete Rebuild of Original 5 speed G50 Transmission</li>
+              <li>Original Factory Exhaust </li>
+              <li>Bespoke Stainless Steel Center Muffler with Dual Exit Pipes and Catalytic Bypass </li>
+            </ul>
+            <p><i>All components are powder or ceramic coated.</i></p>
           </AccordionItem>
           <AccordionItem header="Electrical" eventKey="2">
-              <p>Vehicle retains original electrical system with components replaced as necessary per comprehensive inspection.</p>
+            <p>Vehicle retains original electrical system with components replaced as necessary per comprehensive inspection.</p>
           </AccordionItem>
           <AccordionItem header="Lighting" eventKey="3">
-              <p>All interior lighting replaced and new.  Instrument cluster replaced with LED bulbs.</p>
-              <p>Headlights, taillights and turn signal lights replaced and new.  9Eleven headlights feature high output DOT/ECE compliant Bi LED optics.  Multiple style options available.</p>
+            <p>All interior lighting replaced and new.  Instrument cluster replaced with LED bulbs.</p>
+            <p>Headlights, taillights and turn signal lights replaced and new.  9Eleven headlights feature high output DOT/ECE compliant Bi LED optics.  Multiple style options available.</p>
           </AccordionItem>
           <AccordionItem header="Glass/Mirrors/Trim" eventKey="4">
             <p>New Windshield and Rear Window.  New Side Mirrors available in 3 different style options, including an electrical option.</p>
