@@ -5,7 +5,6 @@ function Supersport() {
     return (
         <div className="container-ss">
             <Row className="vid-row" id="supersport-vid">
-                <h4>Supersport</h4>
                 <video src="videos/supersport360.mp4" playsInline="playsinline" autoPlay="autoplay" loop="loop" muted="muted"></video>
             </Row>
             <Row>

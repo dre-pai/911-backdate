@@ -11,15 +11,6 @@
     margin: 0 auto;
 }
 
-#supersport-vid h4 {
-    position: absolute;
-    top: 10px;
-    left: 25px;
-    z-index: 10;
-    margin: 0;
-    font-weight: 400;
-}
-
 .img-right {
     float: right;
     margin: 0 0 5px 15px;
