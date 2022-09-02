@@ -11,7 +11,7 @@ class About extends React.Component {
     return (
       <div className="container-md">
         <Row className="vid-row">
-          <video src="videos/orange360.m4v" id="vision-vid" playsInline="playsinline" autoPlay="autoplay" loop="loop" muted="muted"></video>
+          <video src="videos/orange360.m4v" id="vision-vid" playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted"></video>
         </Row>
         <Row>
           <Col>

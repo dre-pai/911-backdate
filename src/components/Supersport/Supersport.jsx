@@ -5,7 +5,7 @@ function Supersport() {
     return (
         <div className="container-ss">
             <Row className="vid-row" id="supersport-vid">
-                <video src="videos/supersport360.mp4" playsInline="playsinline" autoPlay="autoplay" loop="loop" muted="muted"></video>
+                <video src="videos/supersport360.mp4" playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted"></video>
             </Row>
             <Row>
                 <Col>
