@@ -10,7 +10,7 @@ function Supersport() {
             <Row>
                 <Col>
                     <div className='img-right'>
-                        <Image src="images/supersport-front.jpg" fluid />
+                        <Image src="images/supersport-fr.jpg" fluid />
                     </div>
                     <p className="first-p">
                         We are pleased to announce the launch of the SuperSport Backdate 911. Designed to be a modern interpretation of Porsche’s timeless long-hood body style, it has retained the signature retro 1970’s glam while embracing graciously proportioned aero dynamic body elements and modern innovative details.  The result is an enticing, high drama adaptation that is naturally smart and seriously sexy.
@@ -32,7 +32,7 @@ function Supersport() {
             <Row>
                 <Col>
                     <div className='img-left'>
-                        <Image src="images/supersport-back.jpg" fluid />
+                        <Image src="images/supersport-bl.jpg" fluid />
                     </div>
                     <p>
                         The cabin of the vehicle is entirely custom.  Each element of the interior is easily adapted to the preference of the client, from the bezels to styling of doors and dash, each detail part of its owner’s signature.  It begins with a generous leather-lined interior, indulgent while maintaining the charm of the early 911’s, with a basket weave dash insert and seat centers, metal grommets, and ornamentation reminiscent of a beautifully preserved classic. Meanwhile, carefully curated modern elements are infused throughout the cabin like the Porsche Radio with Bluetooth and Navigation and a new, (albeit retro-styled) A/C unit.
@@ -52,10 +52,19 @@ function Supersport() {
                 </Col>
             </Row>
             <Row>
-                <Col>
-                    <Image src="images/supersport-last.jpg" fluid />
+                <Col className='supersport-img-col'>
+                    <Image src="images/supersport-main.jpg" fluid />
                 </Col>
             </Row>
+            <Row>
+                <Col className='supersport-img-col' md>
+                    <Image src="images/supersport-top.jpg" fluid />
+                </Col>
+                <Col className='supersport-img-col' md>
+                    <Image src="images/supersport-profile.jpg" fluid />
+                </Col>
+            </Row>
+
         </div>
     )
 }
