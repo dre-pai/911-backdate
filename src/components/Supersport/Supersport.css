@@ -1,9 +1,5 @@
 #supersport-vid {
-    max-height: 475px;
     margin: -25px auto 0;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 15px;
 }
 
 .container-ss {
@@ -15,12 +11,7 @@
     margin-bottom: 30px;
 }
 
-
 @media (min-width: 991px) {
-    #supersport-vid video {
-        transform: translateY(-10%);
-    }
-
     .img-right {
         float: right;
         max-width: 750px;
