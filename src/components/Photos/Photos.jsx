@@ -107,13 +107,42 @@ class Photos extends React.Component {
           <Col>
             <div>
               <Image
-                onClick={() => this.galleryClick('supersport')}
-                src="images/ss-thumb.jpg"
+                onClick={() => this.galleryClick('blue-ss')}
+                src="images/gallery/blue-ss/thumb2.jpeg"
                 fluid
               />
             </div>
           </Col>
-          <Col />
+          <Col>
+            <div>
+              <Image
+                onClick={() => this.galleryClick('gray-ss')}
+                src="images/gallery/gray-ss/thumb.jpg"
+                fluid
+              />
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <div>
+              <Image
+                onClick={() => this.galleryClick('orange-ss')}
+                src="images/gallery/orange-ss/thumb.jpg"
+                fluid
+              />
+            </div>
+          </Col>
+          <Col>
+            <div>
+              <Image
+                onClick={() => this.galleryClick('red-ss')}
+                src="images/gallery/red-ss/thumb.jpg"
+                fluid
+              />
+            </div>
+          </Col>
+
         </Row>
         <ProjectGallery images={this.state.images} />
       </div>
