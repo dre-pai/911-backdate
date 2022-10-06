@@ -59,9 +59,9 @@ export default class Navigation extends React.Component {
               >
                 Home
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/customization" onClick={this.hideNav}>
+              {/* <Nav.Link as={NavLink} to="/customization" onClick={this.hideNav}>
                 Customization
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link as={NavLink} to="/specs" onClick={this.hideNav}>
                 Specs
               </Nav.Link>
