@@ -108,7 +108,7 @@ class Photos extends React.Component {
             <div>
               <Image
                 onClick={() => this.galleryClick('blue-ss')}
-                src="images/gallery/blue-ss/thumb2.jpeg"
+                src="images/gallery/blue-ss/icon.jpg"
                 fluid
               />
             </div>
@@ -117,7 +117,7 @@ class Photos extends React.Component {
             <div>
               <Image
                 onClick={() => this.galleryClick('gray-ss')}
-                src="images/gallery/gray-ss/thumb.jpg"
+                src="images/gallery/gray-ss/icon.jpg"
                 fluid
               />
             </div>
@@ -128,7 +128,7 @@ class Photos extends React.Component {
             <div>
               <Image
                 onClick={() => this.galleryClick('orange-ss')}
-                src="images/gallery/orange-ss/thumb.jpg"
+                src="images/gallery/orange-ss/icon.jpg"
                 fluid
               />
             </div>
@@ -137,7 +137,7 @@ class Photos extends React.Component {
             <div>
               <Image
                 onClick={() => this.galleryClick('red-ss')}
-                src="images/gallery/red-ss/thumb.jpg"
+                src="images/gallery/red-ss/icon.jpg"
                 fluid
               />
             </div>
