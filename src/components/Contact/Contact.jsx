@@ -32,9 +32,9 @@ class Contact extends React.Component {
           </Col>
         </Row>
         <Row className="contact-img-row">
-          <Row className="vid-row">
-            <video src="videos/blue360.mp4" id="vision-vid" playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted"></video>
-          </Row>
+          <Col>
+            <Image fluid src="images/oj-int.jpg" />
+          </Col>
         </Row>
       </div>
     );

@@ -37,7 +37,7 @@ class Reservations extends React.Component {
         </Row>
         <Row>
           <Col>
-            <Image src="images/res-shop.jpg" fluid />
+            <Image src="images/gr-int.jpg" className="w-100" fluid />
           </Col>
         </Row>
       </div>
