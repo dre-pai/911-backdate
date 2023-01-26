@@ -6,7 +6,7 @@ class Video extends React.Component {
   render() {
     return (
       <Row className="vid-row">
-        <video src="videos/miami-shop.m4v" controls playsinline="playsinline" autoplay="autoplay"></video>
+        <video src="videos/blcar.mpv" playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted"></video>
       </Row>
     );
   }

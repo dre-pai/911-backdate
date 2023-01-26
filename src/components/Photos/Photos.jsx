@@ -76,23 +76,14 @@ class Photos extends React.Component {
           <Col>
             <div>
               <Image
-                onClick={() => this.galleryClick('red-backdate')}
-                src="images/red-th.jpg"
-                fluid
-              />
-            </div>
-          </Col>
-        </Row>
-        <Row className="projectRow">
-          <Col>
-            <div>
-              <Image
                 onClick={() => this.galleryClick('dkblue-backdate')}
                 src="images/dbthumb.JPG"
                 fluid
               />
             </div>
           </Col>
+        </Row>
+        <Row className="projectRow">
           <Col>
             <div>
               <Image
@@ -102,8 +93,6 @@ class Photos extends React.Component {
               />
             </div>
           </Col>
-        </Row>
-        <Row className="projectRow">
           <Col>
             <div>
               <Image
@@ -113,6 +102,8 @@ class Photos extends React.Component {
               />
             </div>
           </Col>
+        </Row>
+        <Row className="projectRow">
           <Col>
             <div>
               <Image
@@ -122,8 +113,6 @@ class Photos extends React.Component {
               />
             </div>
           </Col>
-        </Row>
-        <Row>
           <Col>
             <div>
               <Image
@@ -133,6 +122,8 @@ class Photos extends React.Component {
               />
             </div>
           </Col>
+        </Row>
+        <Row>
           <Col>
             <div>
               <Image
@@ -142,7 +133,6 @@ class Photos extends React.Component {
               />
             </div>
           </Col>
-
         </Row>
         <ProjectGallery images={this.state.images} />
       </div>

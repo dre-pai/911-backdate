@@ -7,18 +7,18 @@ class Design extends React.Component {
     return (
       <div id="design-wrap">
         <div className="design-edition">
-          <h4>Sport Edition</h4>
+          <h4>Classic Touring Edition</h4>
           <Row>
             <Col sm>
-              <Image fluid src="images/des-green-front2.jpg" />
+              <Image fluid src="images/silv-front.jpg" />
             </Col>
             <Col sm>
-              <Image fluid src="images/des-green-rear2.jpg" />
+              <Image fluid src="images/silv-rear.jpg" />
             </Col>
           </Row>
         </div>
         <div className="design-edition">
-          <h4>Super Sport Edition</h4>
+          <h4>Supersport Edition</h4>
           <Row>
             <Col sm>
               <Image fluid src="images/ss1.jpg" />
@@ -29,17 +29,16 @@ class Design extends React.Component {
           </Row>
         </div>
         <div className="design-edition">
-          <h4>Touring Edition</h4>
+          <h4>Sport Edition</h4>
           <Row>
             <Col sm>
-              <Image fluid src="images/silv-front.jpg" />
+              <Image fluid src="images/des-green-front2.jpg" />
             </Col>
             <Col sm>
-              <Image fluid src="images/silv-rear.jpg" />
+              <Image fluid src="images/des-green-rear2.jpg" />
             </Col>
           </Row>
         </div>
-        <h4 id="design-coming-soon">Specs Coming Soon...</h4>
       </div>
     );
   }

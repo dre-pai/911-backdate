@@ -13,13 +13,13 @@ function Supersport() {
                         <Image src="images/supersport-fr.jpg" fluid />
                     </div>
                     <p className="first-p">
-                        We are pleased to announce the launch of the SuperSport Backdate 911. Designed to be a modern interpretation of Porsche’s timeless long-hood body style, it has retained the signature retro 1970’s glam while embracing graciously proportioned aero dynamic body elements and modern innovative details.  The result is an enticing, high drama adaptation that is naturally smart and seriously sexy.
+                        We are pleased to announce the launch of the SuperSport Backdate 911. Designed to be a modern interpretation of Porsche’s timeless long-hood body style, it has retained the signature retro 1970’s glam while embracing graciously proportioned aero dynamic body elements and modern innovative details. The result is an enticing, high drama adaptation that is naturally smart and seriously sexy.
                     </p>
                     <p>
                         With the Supersport Backdate we have strived to make a statement while salvaging the purity and history of the vehicle’s original form.  From inspiration to installation, no attention to detail has been spared.  Beyond a vanity project, the SuperSport was born from a passionate devotion to improvement and innovation.  Characterized by its 991-inspired ducktail, low profile rocker panels, bespoke bumpers and custom diffuser, the Supersport has smoothly transitioned itself between decades of Porsche design without sacrificing material harmony. It is both cultivated and wild.
                     </p>
                     <p>
-                        While the exterior design indulges the appetite for a modernized stance and profile, the revision goes beyond pure ornamentation to achieve purpose and function.  The uniquely Supersport body style components are composed entirely of lightweight carbon fiber and have successfully decreased the total body weight.  Paired with other performance enhancements like the 3.9L twin-plug engine conversion and a lightweight flywheel and short shifter, overall horsepower has increased to 345, further elevating the already revelatory air-cooled driving experience.
+                        While the exterior design indulges the appetite for a modernized stance and profile, the revision goes beyond pure ornamentation to achieve purpose and function.  The uniquely Supersport body style components are composed entirely of lightweight carbon fiber and have successfully decreased the total body weight.  Paired with other performance enhancements like the 3.9L twin-plug engine conversion, lightweight flywheel, electric power steering, short shifter, and electric AC system, the overall horsepower has increased to 400, further elevating the already revelatory air-cooled driving experience.
                     </p>
                     <p>
                         The underside of the vehicle harbors hidden details like stainless steel braided lines, an advanced Ohlins or Bilstein suspension system, Brembo GT brakes, a center exit exhaust and 935-inspired exhaust tips.  All underbody components are powder coated with various accents in the color(s) of choice, which brings us to....
@@ -35,7 +35,7 @@ function Supersport() {
                         <Image src="images/supersport-bl.jpg" fluid />
                     </div>
                     <p>
-                        The cabin of the vehicle is entirely custom.  Each element of the interior is easily adapted to the preference of the client, from the bezels to styling of doors and dash, each detail part of its owner’s signature.  It begins with a generous leather-lined interior, indulgent while maintaining the charm of the early 911’s, with a basket weave dash insert and seat centers, metal grommets, and ornamentation reminiscent of a beautifully preserved classic. Meanwhile, carefully curated modern elements are infused throughout the cabin like the Porsche Radio with Bluetooth and Navigation and a new, (albeit retro-styled) A/C unit.
+                        The cabin of the vehicle is entirely custom.  Each element of the interior is easily adapted to the preference of the client, from the bezels to styling of doors and dash, each detail part of its owner’s signature.  It begins with a generous leather-lined interior, indulgent while maintaining the charm of the early 911’s, with a basket weave dash insert and seat centers, metal grommets, and ornamentation reminiscent of a beautifully preserved classic. Meanwhile, carefully curated modern elements are infused throughout the cabin like the Porsche Radio with Bluetooth and Navigation and a new electric A/C syste.
                     </p>
                     <p>
                         Other features within the cabin include the Momo steering wheel and Porsche horn button, instrument panel in the design of preference, a redesigned center console with wood engraved shifter and custom sport seats that comfortably envelop the driver. Carpeting and mats in performance fabric ensures durability.
@@ -62,6 +62,20 @@ function Supersport() {
                 </Col>
                 <Col className='supersport-img-col' md>
                     <Image src="images/supersport-profile.jpg" fluid />
+                </Col>
+            </Row>
+            <Row>
+                <Col className='supersport-img-col' md>
+                    <Image src="images/interior-2.jpg" fluid />
+                </Col>
+                <Col className='supersport-img-col' md>
+                    <Image src="images/interior-1.jpg" fluid />
+                </Col>
+            </Row>
+            <Row>
+
+                <Col className='supersport-img-col' md>
+                    <Image src="images/blue-with-interior.jpg" fluid />
                 </Col>
             </Row>
 

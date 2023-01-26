@@ -90,6 +90,10 @@ class Specs extends React.Component {
             <p>New Speakers </p>
             <p>New Interior Trims and Finishes</p>
           </AccordionItem>
+          <AccordionItem header="AC System" eventKey="8">
+            <p>Vehicle retains the original AC system with all components replaced with new parts.</p>
+            <p>Electric AC systems available upon request.</p>
+          </AccordionItem>
         </Accordion>
       </div>
     );
