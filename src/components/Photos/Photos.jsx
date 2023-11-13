@@ -1,8 +1,8 @@
-import React from 'react';
-import { Row, Col, Image } from 'react-bootstrap';
-import './Photos.css';
-import ProjectGallery from '../ProjectGallery/ProjectGallery';
-const axios = require('axios');
+import React from "react";
+import { Row, Col, Image } from "react-bootstrap";
+import "./Photos.css";
+import ProjectGallery from "../ProjectGallery/ProjectGallery";
+const axios = require("axios");
 
 class Photos extends React.Component {
   constructor() {
@@ -14,9 +14,8 @@ class Photos extends React.Component {
 
   galleryClick(selectedGallery) {
     let data = [];
-    const src = 'images/gallery/' + selectedGallery + '/';
-    axios.get('/api/images?folder=' + selectedGallery).then((res) => {
-
+    const src = "images/gallery/" + selectedGallery + "/";
+    axios.get("/api/images?folder=" + selectedGallery).then((res) => {
       for (let i = 0; i < res.data.length; i++) {
         let val = src + res.data[i];
         data.push({
@@ -29,9 +28,12 @@ class Photos extends React.Component {
         images: data,
       });
 
-      document.getElementById('ReactGridGallery').scrollIntoView();
+      document.getElementById("ReactGridGallery").scrollIntoView();
 
-      setTimeout(() => document.getElementById('ReactGridGallery').scrollIntoView(), 1000);
+      setTimeout(
+        () => document.getElementById("ReactGridGallery").scrollIntoView(),
+        1000
+      );
     });
   }
 
@@ -47,7 +49,27 @@ class Photos extends React.Component {
           <Col>
             <div>
               <Image
-                onClick={() => this.galleryClick('gray-backdate')}
+                onClick={() => this.galleryClick("carbon-gray")}
+                src="images/gallery/carbon-gray/main.jpg"
+                fluid
+              />
+            </div>
+          </Col>
+          <Col>
+            <div>
+              <Image
+                onClick={() => this.galleryClick("black-gold")}
+                src="images/gallery/black-gold/icon.jpg"
+                fluid
+              />
+            </div>
+          </Col>
+        </Row>
+        <Row className="projectRow">
+          <Col>
+            <div>
+              <Image
+                onClick={() => this.galleryClick("gray-backdate")}
                 src="images/gray-th.jpg"
                 fluid
               />
@@ -56,7 +78,7 @@ class Photos extends React.Component {
           <Col>
             <div>
               <Image
-                onClick={() => this.galleryClick('green-backdate')}
+                onClick={() => this.galleryClick("green-backdate")}
                 src="images/green-th.jpg"
                 fluid
               />
@@ -67,7 +89,7 @@ class Photos extends React.Component {
           <Col>
             <div>
               <Image
-                onClick={() => this.galleryClick('blue-backdate')}
+                onClick={() => this.galleryClick("blue-backdate")}
                 src="images/blue-th.jpg"
                 fluid
               />
@@ -76,7 +98,7 @@ class Photos extends React.Component {
           <Col>
             <div>
               <Image
-                onClick={() => this.galleryClick('dkblue-backdate')}
+                onClick={() => this.galleryClick("dkblue-backdate")}
                 src="images/dbthumb.JPG"
                 fluid
               />
@@ -87,7 +109,7 @@ class Photos extends React.Component {
           <Col>
             <div>
               <Image
-                onClick={() => this.galleryClick('grayblue-backdate')}
+                onClick={() => this.galleryClick("grayblue-backdate")}
                 src="images/lbthumb.JPG"
                 fluid
               />
@@ -96,7 +118,7 @@ class Photos extends React.Component {
           <Col>
             <div>
               <Image
-                onClick={() => this.galleryClick('blue-ss')}
+                onClick={() => this.galleryClick("blue-ss")}
                 src="images/gallery/blue-ss/icon.jpg"
                 fluid
               />
@@ -107,7 +129,7 @@ class Photos extends React.Component {
           <Col>
             <div>
               <Image
-                onClick={() => this.galleryClick('gray-ss')}
+                onClick={() => this.galleryClick("gray-ss")}
                 src="images/gallery/gray-ss/icon.jpg"
                 fluid
               />
@@ -116,32 +138,24 @@ class Photos extends React.Component {
           <Col>
             <div>
               <Image
-                onClick={() => this.galleryClick('orange-ss')}
+                onClick={() => this.galleryClick("orange-ss")}
                 src="images/gallery/orange-ss/icon.jpg"
                 fluid
               />
             </div>
           </Col>
         </Row>
-        <Row>
+        <Row className="projectRow">
           <Col>
             <div>
               <Image
-                onClick={() => this.galleryClick('red-ss')}
+                onClick={() => this.galleryClick("red-ss")}
                 src="images/gallery/red-ss/icon.jpg"
                 fluid
               />
             </div>
           </Col>
-          <Col>
-            <div>
-              <Image
-                onClick={() => this.galleryClick('black-gold')}
-                src="images/gallery/black-gold/icon.jpg"
-                fluid
-              />
-            </div>
-          </Col>
+          <Col></Col>
         </Row>
         <ProjectGallery images={this.state.images} />
       </div>
