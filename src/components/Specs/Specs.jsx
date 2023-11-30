@@ -64,7 +64,7 @@ class Specs extends React.Component {
             <p>Porsche badging and decals per the color/style choice of the client.</p>
           </AccordionItem>
           <AccordionItem header="Wheels/Brakes/Suspension" eventKey="5">
-            <p>Wheels are replaced with 17” Bespoke wheels produced by Braid Wheels.  </p>
+            <p>Wheels are replaced with 17” Bespoke wheels produced by Fikse Wheels.</p>
             <ul>
               <li>Rear	 255-40ZR17</li>
               <li>Front	 225-45ZR17</li>
