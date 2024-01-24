@@ -69,12 +69,23 @@ class Photos extends React.Component {
           <Col>
             <div>
               <Image
+                onClick={() => this.galleryClick("steel-gray")}
+                src="images/steel-gray-main.JPG"
+                fluid
+              />
+            </div>
+          </Col>
+          <Col>
+            <div>
+              <Image
                 onClick={() => this.galleryClick("gray-backdate")}
                 src="images/gray-th.jpg"
                 fluid
               />
             </div>
           </Col>
+        </Row>
+        <Row className="projectRow">
           <Col>
             <div>
               <Image
@@ -84,8 +95,6 @@ class Photos extends React.Component {
               />
             </div>
           </Col>
-        </Row>
-        <Row className="projectRow">
           <Col>
             <div>
               <Image
@@ -95,6 +104,8 @@ class Photos extends React.Component {
               />
             </div>
           </Col>
+        </Row>
+        <Row className="projectRow">
           <Col>
             <div>
               <Image
@@ -104,8 +115,6 @@ class Photos extends React.Component {
               />
             </div>
           </Col>
-        </Row>
-        <Row className="projectRow">
           <Col>
             <div>
               <Image
@@ -115,6 +124,8 @@ class Photos extends React.Component {
               />
             </div>
           </Col>
+        </Row>
+        <Row className="projectRow">
           <Col>
             <div>
               <Image
@@ -124,8 +135,6 @@ class Photos extends React.Component {
               />
             </div>
           </Col>
-        </Row>
-        <Row className="projectRow">
           <Col>
             <div>
               <Image
@@ -135,6 +144,8 @@ class Photos extends React.Component {
               />
             </div>
           </Col>
+        </Row>
+        <Row className="projectRow">
           <Col>
             <div>
               <Image
@@ -144,8 +155,6 @@ class Photos extends React.Component {
               />
             </div>
           </Col>
-        </Row>
-        <Row className="projectRow">
           <Col>
             <div>
               <Image
