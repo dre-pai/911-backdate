@@ -145,7 +145,7 @@ class Photos extends React.Component {
             </div>
           </Col>
         </Row>
-        <Row className="projectRow">
+        {/* <Row className="projectRow">
           <Col>
             <div>
               <Image
@@ -165,7 +165,7 @@ class Photos extends React.Component {
             </div>
           </Col>
           <Col></Col>
-        </Row>
+        </Row> */}
         <ProjectGallery images={this.state.images} />
       </div>
     );
