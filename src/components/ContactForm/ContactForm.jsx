@@ -1,7 +1,19 @@
 import React from "react";
 import { Button, Form, Row, Col } from "react-bootstrap";
 import "./ContactForm.css";
-const axios = require("axios");
+import emailjs from "@emailjs/browser";
+
+emailjs.init({
+  publicKey: "ne5rIdwNwWUWWKBV3",
+  // Do not allow headless browsers
+  blockHeadless: true,
+  limitRate: {
+    // Set the limit rate for the application
+    id: "app",
+    // Allow 1 request per 10s
+    throttle: 10000,
+  },
+});
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -38,39 +50,45 @@ class ContactForm extends React.Component {
     });
   };
 
-  handleSubmit = (e) => {
+  handleSubmit = async (e) => {
     e.preventDefault();
 
-    document.getElementById("submit").disabled = true;
-    document.getElementById("submit").innerText = "Loading...";
+    try {
+      document.getElementById("submit").disabled = true;
+      document.getElementById("submit").innerText = "Loading...";
 
-    let email = document.getElementById("email").value;
-    let phone = document.getElementById("phone").value;
-    let comments = document.getElementById("comments").value;
+      const templateParams = {
+        name: `${document.getElementById("firstName").value} ${
+          document.getElementById("lastName").value
+        }`,
+        clientEmail: document.getElementById("email").value,
+        clientPhone: document.getElementById("phone").value,
+        message: document.getElementById("comments").value,
+      };
 
-    // axios
-    //   .post('/api/send', {
-    //     firstName: document.getElementById('firstName').value,
-    //     lastName: document.getElementById('lastName').value,
-    //     email,
-    //     phone,
-    //     comments
-    //   })
-    //   .then(response => {
-    //     this.updateFormState(response);
+      const response = await emailjs.send(
+        "default_service",
+        "template_5n833aw",
+        templateParams
+      );
 
-    //     this.submitComplete();
+      console.log(response);
 
-    //     if (Object.getOwnPropertyNames(this.state.formErrors).length === 0) {
-    //       this.submitSuccessful();
-    //     }
+      this.submitComplete();
 
-    //     console.log(response);
-    //   })
-    //   .catch(errors => {
-    //     console.log(errors);
-    //     this.submitComplete();
-    //   });
+      if (response.status === 200) this.submitSuccessful();
+      else {
+        this.setState({
+          formErrors: { email: "error" },
+        });
+      }
+    } catch (e) {
+      console.error(e);
+      this.submitComplete();
+      this.setState({
+        formErrors: { email: "error" },
+      });
+    }
   };
 
   render() {
