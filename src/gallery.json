@@ -787,12 +787,12 @@
       "thumbnail": "images/gallery/carbon-gray/IMG_3740.jpg"
     },
     {
-      "src": "images/gallery/carbon-gray/IMG_3741.jpg",
-      "thumbnail": "images/gallery/carbon-gray/IMG_3741.jpg"
+      "src": "images/gallery/carbon-gray/IMG_3741.JPG",
+      "thumbnail": "images/gallery/carbon-gray/IMG_3741.JPG"
     },
     {
-      "src": "images/gallery/carbon-gray/IMG_3742.jpg",
-      "thumbnail": "images/gallery/carbon-gray/IMG_3742.jpg"
+      "src": "images/gallery/carbon-gray/IMG_3742.JPG",
+      "thumbnail": "images/gallery/carbon-gray/IMG_3742.JPG"
     },
     {
       "src": "images/gallery/carbon-gray/IMG_3743.jpg",
@@ -1187,6 +1187,10 @@
     {
       "src": "images/gallery/dkblue-backdate/IMG_2293.jpg",
       "thumbnail": "images/gallery/dkblue-backdate/IMG_2293.jpg"
+    },
+    {
+      "src": "images/gallery/dkblue-backdate/thumb.jpg",
+      "thumbnail": "images/gallery/dkblue-backdate/thumb.jpg"
     }
   ],
   "gray-backdate": [
@@ -1873,6 +1877,10 @@
     {
       "src": "images/gallery/grayblue-backdate/IMG_2725.jpg",
       "thumbnail": "images/gallery/grayblue-backdate/IMG_2725.jpg"
+    },
+    {
+      "src": "images/gallery/grayblue-backdate/thumb.jpg",
+      "thumbnail": "images/gallery/grayblue-backdate/thumb.jpg"
     }
   ],
   "green-backdate": [
@@ -2495,6 +2503,10 @@
     {
       "src": "images/gallery/steel-gray/Photo Jan 23 2024, 3 18 52 PM.jpg",
       "thumbnail": "images/gallery/steel-gray/Photo Jan 23 2024, 3 18 52 PM.jpg"
+    },
+    {
+      "src": "images/gallery/steel-gray/steel-gray-main.jpg",
+      "thumbnail": "images/gallery/steel-gray/steel-gray-main.jpg"
     }
   ]
 }
