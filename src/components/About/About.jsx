@@ -1,17 +1,24 @@
-import React from 'react';
-import './About.css'
-import { Row, Col, Image } from 'react-bootstrap';
+import React from "react";
+import "./About.css";
+import { Row, Col, Image } from "react-bootstrap";
 
 class About extends React.Component {
   componentDidMount() {
-    document.getElementById('vision-vid').play();
+    document.getElementById("vision-vid").play();
   }
 
   render() {
     return (
       <div className="container-md">
         <Row className="vid-row">
-          <video src="videos/orange360.m4v" id="vision-vid" playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted"></video>
+          <video
+            src="https://911-backdate-bucket.s3.amazonaws.com/orange360.m4v"
+            id="vision-vid"
+            playsinline="playsinline"
+            autoplay="autoplay"
+            loop="loop"
+            muted="muted"
+          ></video>
         </Row>
         <Row>
           <Col>
@@ -30,23 +37,23 @@ class About extends React.Component {
             <p>
               The acceptance of any modification to a classic 911 by a tribe so
               staunchly devoted to preservation was initially quite difficult to
-              comprehend; however, it gradually became clear to us that this idea
-              of a revised Porsche 911 was in effect a form of preservation,
-              albeit not in the proverbial sense of the word. The 911 Backdate
-              is a marriage of 2 beloved eras of the classic air-cooled 911 –
-              the 1970’s ST and the 964 of the 1990’s. We often say we wish we
-              knew then what we know now and the pairing of these 2 classic
-              Porsche models seamlessly achieves this. The ST was born during a
-              period in automotive history prodigious with innovation in
-              artistry and design. Its visual appeal is timeless, handsome, and
-              distinguished. It has smooth lines and soft curved surfaces
+              comprehend; however, it gradually became clear to us that this
+              idea of a revised Porsche 911 was in effect a form of
+              preservation, albeit not in the proverbial sense of the word. The
+              911 Backdate is a marriage of 2 beloved eras of the classic
+              air-cooled 911 – the 1970’s ST and the 964 of the 1990’s. We often
+              say we wish we knew then what we know now and the pairing of these
+              2 classic Porsche models seamlessly achieves this. The ST was born
+              during a period in automotive history prodigious with innovation
+              in artistry and design. Its visual appeal is timeless, handsome,
+              and distinguished. It has smooth lines and soft curved surfaces
               delicately embellished with staccatos of finely polished mirrors,
-              moldings, and trims. Additionally, the wider proportions of its rear view
-              creates a visage that is irresistibly likable. The 964 is revered
-              for its achievements in race engineering, a culmination of 30
-              years of Porsche technical evolution. It is easy to handle, safety
-              enhanced, and wickedly fast, delivering the ultimate air-cooled
-              911 driving experience.
+              moldings, and trims. Additionally, the wider proportions of its
+              rear view creates a visage that is irresistibly likable. The 964
+              is revered for its achievements in race engineering, a culmination
+              of 30 years of Porsche technical evolution. It is easy to handle,
+              safety enhanced, and wickedly fast, delivering the ultimate
+              air-cooled 911 driving experience.
             </p>
             <p>
               There is a metamorphosis that occurs with the marriage of these

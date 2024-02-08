@@ -1,17 +1,24 @@
-import React from 'react';
-import { Row, Col, Image } from 'react-bootstrap';
-import './Home.css';
+import React from "react";
+import { Row, Col, Image } from "react-bootstrap";
+import "./Home.css";
 
 class Home extends React.Component {
   componentDidMount() {
-    document.getElementById('hero').play();
+    document.getElementById("hero").play();
   }
 
   render() {
     return (
       <div>
         <Row id="hero-container" className="vid-row">
-          <video src="videos/dkblue-360.m4v" id="hero" playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted"></video>
+          <video
+            src="https://911-backdate-bucket.s3.amazonaws.com/dkblue360.m4v"
+            id="hero"
+            playsinline="playsinline"
+            autoplay="autoplay"
+            loop="loop"
+            muted="muted"
+          ></video>
         </Row>
         {/* <Row className="mobile-photos">
           <Col>
