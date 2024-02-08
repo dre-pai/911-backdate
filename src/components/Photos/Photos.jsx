@@ -67,7 +67,7 @@ class Photos extends React.Component {
             <div>
               <Image
                 onClick={() => this.galleryClick("steel-gray")}
-                src="images/steel-gray-main.JPG"
+                src="images/steel-gray-main.jpg"
                 fluid
               />
             </div>
@@ -107,7 +107,7 @@ class Photos extends React.Component {
             <div>
               <Image
                 onClick={() => this.galleryClick("dkblue-backdate")}
-                src="images/dbthumb.JPG"
+                src="images/dbthumb.jpg"
                 fluid
               />
             </div>
@@ -116,7 +116,7 @@ class Photos extends React.Component {
             <div>
               <Image
                 onClick={() => this.galleryClick("grayblue-backdate")}
-                src="images/lbthumb.JPG"
+                src="images/lbthumb.jpg"
                 fluid
               />
             </div>
