@@ -2,7 +2,6 @@ import React from "react";
 import { Row, Col, Image } from "react-bootstrap";
 import "./Photos.css";
 import ProjectGallery from "../ProjectGallery/ProjectGallery";
-const axios = require("axios");
 
 class Photos extends React.Component {
   constructor() {
@@ -13,28 +12,25 @@ class Photos extends React.Component {
   }
 
   galleryClick(selectedGallery) {
-    let data = [];
-    const src = "images/gallery/" + selectedGallery + "/";
-    axios.get("/api/images?folder=" + selectedGallery).then((res) => {
-      for (let i = 0; i < res.data.length; i++) {
-        let val = src + res.data[i];
-        data.push({
-          src: val,
-          thumbnail: val,
-        });
-      }
-
-      this.setState({
-        images: data,
-      });
-
-      document.getElementById("ReactGridGallery").scrollIntoView();
-
-      setTimeout(
-        () => document.getElementById("ReactGridGallery").scrollIntoView(),
-        1000
-      );
-    });
+    // let data = [];
+    // const src = "images/gallery/" + selectedGallery + "/";
+    // axios.get("/api/images?folder=" + selectedGallery).then((res) => {
+    //   for (let i = 0; i < res.data.length; i++) {
+    //     let val = src + res.data[i];
+    //     data.push({
+    //       src: val,
+    //       thumbnail: val,
+    //     });
+    //   }
+    //   this.setState({
+    //     images: data,
+    //   });
+    //   document.getElementById("ReactGridGallery").scrollIntoView();
+    //   setTimeout(
+    //     () => document.getElementById("ReactGridGallery").scrollIntoView(),
+    //     1000
+    //   );
+    // });
   }
 
   render() {

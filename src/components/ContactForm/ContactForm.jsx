@@ -1,76 +1,76 @@
-import React from 'react';
-import { Button, Form, Row, Col } from 'react-bootstrap';
-import './ContactForm.css';
-const axios = require('axios');
+import React from "react";
+import { Button, Form, Row, Col } from "react-bootstrap";
+import "./ContactForm.css";
+const axios = require("axios");
 
 class ContactForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      formErrors: {}
+      formErrors: {},
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   submitComplete = () => {
-    document.getElementById('submit').innerText = 'Submit';
-    document.getElementById('submit').disabled = false;
+    document.getElementById("submit").innerText = "Submit";
+    document.getElementById("submit").disabled = false;
   };
 
   submitSuccessful = () => {
-    document.getElementById('reservationForm').reset();
+    document.getElementById("reservationForm").reset();
     this.props.updatePageStatus();
   };
 
-  updateFormState = response => {
+  updateFormState = (response) => {
     let errorFields = {};
 
     if (response.data.errors != null) {
       for (let i = 0; i < response.data.errors.length; i++) {
         let field = response.data.errors[i].param;
-        errorFields[field] = 'error';
+        errorFields[field] = "error";
       }
     }
 
     this.setState({
-      formErrors: errorFields
+      formErrors: errorFields,
     });
   };
 
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault();
 
-    document.getElementById('submit').disabled = true;
-    document.getElementById('submit').innerText = 'Loading...';
+    document.getElementById("submit").disabled = true;
+    document.getElementById("submit").innerText = "Loading...";
 
-    let email = document.getElementById('email').value;
-    let phone = document.getElementById('phone').value;
-    let comments = document.getElementById('comments').value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let comments = document.getElementById("comments").value;
 
-    axios
-      .post('/api/send', {
-        firstName: document.getElementById('firstName').value,
-        lastName: document.getElementById('lastName').value,
-        email,
-        phone,
-        comments
-      })
-      .then(response => {
-        this.updateFormState(response);
+    // axios
+    //   .post('/api/send', {
+    //     firstName: document.getElementById('firstName').value,
+    //     lastName: document.getElementById('lastName').value,
+    //     email,
+    //     phone,
+    //     comments
+    //   })
+    //   .then(response => {
+    //     this.updateFormState(response);
 
-        this.submitComplete();
+    //     this.submitComplete();
 
-        if (Object.getOwnPropertyNames(this.state.formErrors).length === 0) {
-          this.submitSuccessful();
-        }
+    //     if (Object.getOwnPropertyNames(this.state.formErrors).length === 0) {
+    //       this.submitSuccessful();
+    //     }
 
-        console.log(response);
-      })
-      .catch(errors => {
-        console.log(errors);
-        this.submitComplete();
-      });
+    //     console.log(response);
+    //   })
+    //   .catch(errors => {
+    //     console.log(errors);
+    //     this.submitComplete();
+    //   });
   };
 
   render() {
