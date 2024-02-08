@@ -2,6 +2,11 @@ import React from "react";
 import { Row, Col, Image } from "react-bootstrap";
 import "./Photos.css";
 import ProjectGallery from "../ProjectGallery/ProjectGallery";
+import {
+  S3Client,
+  // This command supersedes the ListObjectsCommand and is the recommended way to list objects.
+  ListObjectsV2Command,
+} from "@aws-sdk/client-s3";
 
 class Photos extends React.Component {
   constructor() {
@@ -11,7 +16,32 @@ class Photos extends React.Component {
     };
   }
 
-  galleryClick(selectedGallery) {
+  async galleryClick(selectedGallery) {
+    const client = new S3Client({ region: "us-east-1" });
+
+    const command = new ListObjectsV2Command({
+      Bucket: "911-backdate-bucket",
+    });
+
+    try {
+      let isTruncated = true;
+
+      console.log("Your bucket contains the following objects:\n");
+      let contents = "";
+
+      while (isTruncated) {
+        const { Contents, IsTruncated, NextContinuationToken } =
+          await client.send(command);
+        const contentsList = Contents.map((c) => ` • ${c.Key}`).join("\n");
+        contents += contentsList + "\n";
+        isTruncated = IsTruncated;
+        command.input.ContinuationToken = NextContinuationToken;
+      }
+      console.log(contents);
+    } catch (err) {
+      console.error(err);
+    }
+
     // let data = [];
     // const src = "images/gallery/" + selectedGallery + "/";
     // axios.get("/api/images?folder=" + selectedGallery).then((res) => {
