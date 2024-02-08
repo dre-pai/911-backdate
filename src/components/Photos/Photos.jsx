@@ -2,11 +2,7 @@ import React from "react";
 import { Row, Col, Image } from "react-bootstrap";
 import "./Photos.css";
 import ProjectGallery from "../ProjectGallery/ProjectGallery";
-import {
-  S3Client,
-  // This command supersedes the ListObjectsCommand and is the recommended way to list objects.
-  ListObjectsV2Command,
-} from "@aws-sdk/client-s3";
+import galleryData from "../../gallery.json";
 
 class Photos extends React.Component {
   constructor() {
@@ -16,51 +12,26 @@ class Photos extends React.Component {
     };
   }
 
-  async galleryClick(selectedGallery) {
-    const client = new S3Client({ region: "us-east-1" });
-
-    const command = new ListObjectsV2Command({
-      Bucket: "911-backdate-bucket",
-    });
-
+  galleryClick(selectedGallery) {
     try {
-      let isTruncated = true;
+      const data = galleryData[selectedGallery];
 
-      console.log("Your bucket contains the following objects:\n");
-      let contents = "";
+      if (!data) return;
 
-      while (isTruncated) {
-        const { Contents, IsTruncated, NextContinuationToken } =
-          await client.send(command);
-        const contentsList = Contents.map((c) => ` • ${c.Key}`).join("\n");
-        contents += contentsList + "\n";
-        isTruncated = IsTruncated;
-        command.input.ContinuationToken = NextContinuationToken;
-      }
-      console.log(contents);
-    } catch (err) {
-      console.error(err);
+      this.setState({
+        images: data,
+      });
+
+      setTimeout(
+        () =>
+          document
+            .getElementById("ReactGridGallery")
+            .scrollIntoView({ behavior: "smooth" }),
+        500
+      );
+    } catch (e) {
+      console.log(e);
     }
-
-    // let data = [];
-    // const src = "images/gallery/" + selectedGallery + "/";
-    // axios.get("/api/images?folder=" + selectedGallery).then((res) => {
-    //   for (let i = 0; i < res.data.length; i++) {
-    //     let val = src + res.data[i];
-    //     data.push({
-    //       src: val,
-    //       thumbnail: val,
-    //     });
-    //   }
-    //   this.setState({
-    //     images: data,
-    //   });
-    //   document.getElementById("ReactGridGallery").scrollIntoView();
-    //   setTimeout(
-    //     () => document.getElementById("ReactGridGallery").scrollIntoView(),
-    //     1000
-    //   );
-    // });
   }
 
   render() {
@@ -171,28 +142,10 @@ class Photos extends React.Component {
             </div>
           </Col>
         </Row>
-        {/* <Row className="projectRow">
-          <Col>
-            <div>
-              <Image
-                onClick={() => this.galleryClick("orange-ss")}
-                src="images/gallery/orange-ss/icon.jpg"
-                fluid
-              />
-            </div>
-          </Col>
-          <Col>
-            <div>
-              <Image
-                onClick={() => this.galleryClick("red-ss")}
-                src="images/gallery/red-ss/icon.jpg"
-                fluid
-              />
-            </div>
-          </Col>
-          <Col></Col>
-        </Row> */}
-        <ProjectGallery images={this.state.images} />
+
+        {this.state.images.length > 0 && (
+          <ProjectGallery images={this.state.images} />
+        )}
       </div>
     );
   }

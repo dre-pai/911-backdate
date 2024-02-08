@@ -1,6 +1,6 @@
-import React from 'react';
-import { Row, Col } from 'react-bootstrap';
-import Gallery from 'react-grid-gallery';
+import React from "react";
+import { Row, Col } from "react-bootstrap";
+import Gallery from "react-grid-gallery";
 
 class ProjectGallery extends React.Component {
   render() {
