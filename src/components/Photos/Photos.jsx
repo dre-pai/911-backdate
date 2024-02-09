@@ -46,7 +46,7 @@ class Photos extends React.Component {
           <Col>
             <div>
               <Image
-                onClick={() => this.galleryClick("carbon-gray")}
+                onClick={() => this.galleryClick("carbon")}
                 src="images/gallery/carbon-gray/main.jpg"
                 fluid
               />
