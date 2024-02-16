@@ -131,7 +131,7 @@ function Supersport() {
         </Col>
       </Row>
       <Row>
-        <Col className="supersport-img-col" md>
+        <Col className="supersport-img-col">
           <Image src="images/ss3.jpg" fluid />
         </Col>
       </Row>
