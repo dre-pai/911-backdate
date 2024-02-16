@@ -130,6 +130,11 @@ function Supersport() {
           <Image src="images/interior-1.jpg" fluid />
         </Col>
       </Row>
+      <Row>
+        <Col className="supersport-img-col" md>
+          <Image src="images/ss3.jpg" fluid />
+        </Col>
+      </Row>
     </div>
   );
 }
