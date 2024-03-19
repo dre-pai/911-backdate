@@ -1,8 +1,8 @@
-import React from 'react';
-import { Row, Col, Image } from 'react-bootstrap';
-import ContactForm from '../ContactForm/ContactForm';
-import ThankYou from '../ThankYou/ThankYou';
-import './Reservations.css';
+import React from "react";
+import { Row, Col, Image } from "react-bootstrap";
+import ContactForm from "../ContactForm/ContactForm";
+import ThankYou from "../ThankYou/ThankYou";
+import "./Reservations.css";
 
 class Reservations extends React.Component {
   constructor(props) {
@@ -36,8 +36,18 @@ class Reservations extends React.Component {
           </Col>
         </Row>
         <Row>
-          <Col>
-            <Image src="images/gr-int.jpg" className="w-100" fluid />
+          <Col
+            style={{
+              maxHeight: 600,
+              overflow: "hidden",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <Image
+              src="images/gallery/steel-gray/Photo Jan 17 2024, 1 23 02 PM (2).jpg"
+              fluid
+            />
           </Col>
         </Row>
       </div>
