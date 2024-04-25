@@ -1,7 +1,7 @@
-import React from 'react';
-import { Navbar, Nav, Image } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
-import './Nav.css';
+import React from "react";
+import { Navbar, Nav, Image } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+import "./Nav.css";
 
 export default class Navigation extends React.Component {
   constructor(props) {
@@ -86,6 +86,13 @@ export default class Navigation extends React.Component {
               <Nav.Link as={NavLink} to="/reservations" onClick={this.hideNav}>
                 Reservation
               </Nav.Link>
+              <a
+                className="nav-link"
+                href="https://911backdate.myshopify.com/"
+                target="_blank"
+              >
+                Shop
+              </a>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
