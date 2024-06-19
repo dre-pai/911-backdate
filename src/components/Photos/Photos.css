@@ -26,11 +26,14 @@ h4 {
 
 .projectRow img {
   transition: all 0.4s;
+  object-fit: cover;
+  height: 100%;
 }
 .projectRow .col div {
   background: #000;
   border-radius: 4px;
   overflow: hidden;
+  height: 100%;
 }
 
 @media (max-width: 580px) {
