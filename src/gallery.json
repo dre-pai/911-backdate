@@ -2427,6 +2427,10 @@
       "thumbnail": "images/gallery/jose-green/IMG_3626.jpg"
     },
     {
+      "src": "images/gallery/jose-green/front.jpg",
+      "thumbnail": "images/gallery/jose-green/front.jpg"
+    },
+    {
       "src": "images/gallery/jose-green/main.jpg",
       "thumbnail": "images/gallery/jose-green/main.jpg"
     }
@@ -2823,6 +2827,10 @@
     {
       "src": "images/gallery/orange-targa/IMG_3124.jpg",
       "thumbnail": "images/gallery/orange-targa/IMG_3124.jpg"
+    },
+    {
+      "src": "images/gallery/orange-targa/front.jpg",
+      "thumbnail": "images/gallery/orange-targa/front.jpg"
     },
     {
       "src": "images/gallery/orange-targa/main.jpg",
