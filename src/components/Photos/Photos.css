@@ -15,25 +15,34 @@ h4 {
   margin: 25px 0 30px;
 }
 
-.projectRow {
-  padding-bottom: 35px;
+.project-grid {
+  display: grid;
+  gap: 36px;
+  padding: 0 16px 36px;
+}
+@media (min-width: 800px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.projectRow img:hover {
-  cursor: pointer;
-  opacity: 0.85;
-}
-
-.projectRow img {
-  transition: all 0.4s;
+.project-main-image {
   object-fit: cover;
-  height: 100%;
+  width: 100%;
 }
-.projectRow .col div {
-  background: #000;
+
+.project-main-image-wrap:hover {
+  filter: brightness(0.85);
+}
+
+.project-main-image-wrap {
   border-radius: 4px;
+  background: #fff;
   overflow: hidden;
-  height: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  transition: filter 0.2s;
 }
 
 @media (max-width: 580px) {

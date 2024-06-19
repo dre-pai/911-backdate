@@ -42,126 +42,18 @@ class Photos extends React.Component {
             <h4>- Select a Project -</h4>
           </Col>
         </Row>
-        <Row className="projectRow">
-          <Col>
-            <div>
+        <Row className="project-grid">
+          {IMAGES.map(({ key, src }) => (
+            <div className="project-main-image-wrap">
               <Image
-                onClick={() => this.galleryClick("jose-green")}
-                src="images/gallery/jose-green/main.jpg"
-                fluid
+                key={key}
+                className="project-main-image"
+                onClick={() => this.galleryClick(key)}
+                tabIndex={0}
+                src={src}
               />
             </div>
-          </Col>
-          <Col>
-            <div>
-              <Image
-                onClick={() => this.galleryClick("orange-targa")}
-                src="images/gallery/orange-targa/main.jpg"
-                fluid
-              />
-            </div>
-          </Col>
-        </Row>
-
-        <Row className="projectRow">
-          <Col>
-            <div>
-              <Image
-                onClick={() => this.galleryClick("carbon")}
-                src="images/gallery/carbon/main.jpg"
-                fluid
-              />
-            </div>
-          </Col>
-          <Col>
-            <div>
-              <Image
-                onClick={() => this.galleryClick("black-gold")}
-                src="images/gallery/black-gold/icon.jpg"
-                fluid
-              />
-            </div>
-          </Col>
-        </Row>
-        <Row className="projectRow">
-          <Col>
-            <div>
-              <Image
-                onClick={() => this.galleryClick("steel-gray")}
-                src="images/gallery/steel-gray/steel-gray-main.jpg"
-                fluid
-              />
-            </div>
-          </Col>
-          <Col>
-            <div>
-              <Image
-                onClick={() => this.galleryClick("gray-backdate")}
-                src="images/gray-th.jpg"
-                fluid
-              />
-            </div>
-          </Col>
-        </Row>
-        <Row className="projectRow">
-          <Col>
-            <div>
-              <Image
-                onClick={() => this.galleryClick("green-backdate")}
-                src="images/green-th.jpg"
-                fluid
-              />
-            </div>
-          </Col>
-          <Col>
-            <div>
-              <Image
-                onClick={() => this.galleryClick("blue-backdate")}
-                src="images/blue-th.jpg"
-                fluid
-              />
-            </div>
-          </Col>
-        </Row>
-        <Row className="projectRow">
-          <Col>
-            <div>
-              <Image
-                onClick={() => this.galleryClick("dkblue-backdate")}
-                src="images/gallery/dkblue-backdate/thumb.jpg"
-                fluid
-              />
-            </div>
-          </Col>
-          <Col>
-            <div>
-              <Image
-                onClick={() => this.galleryClick("grayblue-backdate")}
-                src="images/gallery/grayblue-backdate/thumb.jpg"
-                fluid
-              />
-            </div>
-          </Col>
-        </Row>
-        <Row className="projectRow">
-          <Col>
-            <div>
-              <Image
-                onClick={() => this.galleryClick("blue-ss")}
-                src="images/gallery/blue-ss/icon.jpg"
-                fluid
-              />
-            </div>
-          </Col>
-          <Col>
-            <div>
-              <Image
-                onClick={() => this.galleryClick("gray-ss")}
-                src="images/gallery/gray-ss/icon.jpg"
-                fluid
-              />
-            </div>
-          </Col>
+          ))}
         </Row>
 
         {this.state.images.length > 0 && (
@@ -173,3 +65,31 @@ class Photos extends React.Component {
 }
 
 export default Photos;
+
+const IMAGES = [
+  { key: "jose-green", src: "images/gallery/jose-green/main.jpg" },
+
+  { key: "orange-targa", src: "images/gallery/orange-targa/main.jpg" },
+
+  { key: "carbon", src: "images/gallery/carbon/main.jpg" },
+
+  { key: "black-gold", src: "images/gallery/black-gold/icon.jpg" },
+
+  { key: "steel-gray", src: "images/gallery/steel-gray/steel-gray-main.jpg" },
+
+  { key: "gray-backdate", src: "images/gray-th.jpg" },
+  { key: "green-backdate", src: "images/green-th.jpg" },
+
+  { key: "blue-backdate", src: "images/blue-th.jpg" },
+
+  { key: "dkblue-backdate", src: "images/gallery/dkblue-backdate/thumb.jpg" },
+
+  {
+    key: "grayblue-backdate",
+    src: "images/gallery/grayblue-backdate/thumb.jpg",
+  },
+
+  { key: "blue-ss", src: "images/gallery/blue-ss/icon.jpg" },
+
+  { key: "gray-ss", src: "images/gallery/gray-ss/icon.jpg" },
+];
