@@ -44,9 +44,8 @@ class Photos extends React.Component {
         </Row>
         <Row className="project-grid">
           {IMAGES.map(({ key, src }) => (
-            <div className="project-main-image-wrap">
+            <div key={key} className="project-main-image-wrap">
               <Image
-                key={key}
                 className="project-main-image"
                 onClick={() => this.galleryClick(key)}
                 tabIndex={0}
