@@ -1,21 +1,21 @@
-import React from 'react';
-import './App.css';
-import Container from 'react-bootstrap/Container';
-import Navigation from './components/Nav/Nav';
-import Routes from './components/Routes/Routes';
-import Footer from './components/Footer/Footer';
+import React from "react";
+import "./App.css";
+import Container from "react-bootstrap/Container";
+import Navigation from "./components/Nav/Nav";
+import Routes from "./components/Routes/Routes";
+import Footer from "./components/Footer/Footer";
 
 class App extends React.Component {
   componentDidMount() {
     document
-      .getElementById('container')
-      .setAttribute('style', `min-height: ${window.innerHeight}px`);
+      .getElementById("container")
+      .setAttribute("style", `min-height: ${window.innerHeight}px`);
 
-    window.addEventListener('resize', () =>
+    window.addEventListener("resize", () => {
       document
-        .getElementById('container')
-        .setAttribute('style', `min-height: ${window.innerHeight}px`)
-    );
+        .getElementById("container")
+        .setAttribute("style", `min-height: ${window.innerHeight}px`);
+    });
   }
 
   render() {
