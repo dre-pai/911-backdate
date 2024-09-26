@@ -1,6 +1,11 @@
 #hero-container {
   justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: -25px;
+  max-height: 300px;
+  overflow: clip;
 }
 
 @media (min-width: 601px) {
@@ -15,6 +20,7 @@
 
 #hero {
   filter: brightness(110%);
+  margin: auto;
 }
 .orders-text {
   font-family: "Montserrat", sans-serif;
