@@ -12,7 +12,7 @@ class Home extends React.Component {
       <div>
         <Row id="hero-container" className="vid-row">
           <video
-            src="https://911-backdate-bucket.s3.amazonaws.com/dkblue360.m4v"
+            src="https://911-backdate-bucket.s3.amazonaws.com/green360.mp4"
             id="hero"
             playsinline="playsinline"
             autoplay="autoplay"

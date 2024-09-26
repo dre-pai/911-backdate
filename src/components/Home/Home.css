@@ -13,8 +13,11 @@
   }
 }
 
+#hero {
+  filter: brightness(110%);
+}
 .orders-text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 100%;
   text-align: center;
   text-transform: uppercase;
