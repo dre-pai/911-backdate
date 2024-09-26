@@ -7,7 +7,7 @@ class Video extends React.Component {
     return (
       <Row className="vid-row">
         <video
-          src="https://911-backdate-bucket.s3.amazonaws.com/supersport.m4v"
+          src="https://911-backdate-bucket.s3.amazonaws.com/video-page.mp4"
           playsinline="playsinline"
           autoplay="autoplay"
           loop="loop"
