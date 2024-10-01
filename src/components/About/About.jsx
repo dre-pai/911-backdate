@@ -82,7 +82,26 @@ class About extends React.Component {
         </Row>
         <Row>
           <Col>
-            <Image id="about-img-top" src="images/our-vision-2.jpg" fluid />
+            <Image
+              id="about-img-top"
+              style={{ width: "100%" }}
+              src="images/crimson-ss-front.jpg"
+              fluid
+            />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image
+              style={{ width: "100%" }}
+              src="images/crimson-ss-rear.jpg"
+              fluid
+            />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image src="images/our-vision-2.jpg" fluid />
           </Col>
         </Row>
         <Row>

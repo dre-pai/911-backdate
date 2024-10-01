@@ -6,7 +6,7 @@ function Supersport() {
     <div className="container-ss">
       <Row className="vid-row" id="supersport-vid">
         <video
-          src="https://911-backdate-bucket.s3.amazonaws.com/supersport-wide.m4v"
+          src="https://911-backdate-bucket.s3.amazonaws.com/supersport-rolling.mp4"
           playsinline="playsinline"
           autoplay="autoplay"
           loop="loop"
