@@ -35,19 +35,12 @@ class Reservations extends React.Component {
             </div>
           </Col>
         </Row>
-        <Row>
-          <Col
-            style={{
-              maxHeight: 600,
-              overflow: "hidden",
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <Image
-              src="images/gallery/steel-gray/Photo Jan 17 2024, 1 23 02 PM (2).jpg"
-              fluid
-            />
+        <Row className="img-row">
+          <Col>
+            <Image src="images/res-bottom-2.jpg" fluid />
+          </Col>
+          <Col>
+            <Image src="images/res-bottom.jpg" fluid />
           </Col>
         </Row>
       </div>

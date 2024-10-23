@@ -40,7 +40,10 @@ class Contact extends React.Component {
         </Row>
         <Row className="contact-img-row">
           <Col>
-            <Image fluid src="images/contact.jpg" />
+            <Image fluid src="images/contact-1.jpg" />
+          </Col>
+          <Col>
+            <Image fluid src="images/contact-2.jpg" />
           </Col>
         </Row>
       </div>

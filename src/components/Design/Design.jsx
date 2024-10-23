@@ -1,6 +1,6 @@
-import React from 'react';
-import { Row, Col, Image } from 'react-bootstrap';
-import './Design.css';
+import React from "react";
+import { Row, Col, Image } from "react-bootstrap";
+import "./Design.css";
 
 class Design extends React.Component {
   render() {
@@ -17,6 +17,7 @@ class Design extends React.Component {
             </Col>
           </Row>
         </div>
+
         <div className="design-edition">
           <h4>Supersport Edition</h4>
           <Row>
@@ -28,6 +29,19 @@ class Design extends React.Component {
             </Col>
           </Row>
         </div>
+
+        <div className="design-edition">
+          <h4>Supersport Targa Edition</h4>
+          <Row>
+            <Col sm>
+              <Image fluid src="images/ss-targa-back.jpg" />
+            </Col>
+            <Col sm>
+              <Image fluid src="images/ss-targa-front.jpg" />
+            </Col>
+          </Row>
+        </div>
+
         <div className="design-edition">
           <h4>Sport Edition</h4>
           <Row>

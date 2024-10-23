@@ -7,9 +7,9 @@ class Specs extends React.Component {
   render() {
     return (
       <div>
-        <Row>
-          <Col className="spec-top">
-            <Image src="images/dkojside.jpg" fluid />
+        <Row className="spec-top">
+          <Col>
+            <Image src="images/specs-top.jpg" fluid />
           </Col>
         </Row>
         <Accordion>
@@ -210,6 +210,11 @@ class Specs extends React.Component {
             <p>Electric AC systems available upon request.</p>
           </AccordionItem>
         </Accordion>
+        <Row className="spec-bottom">
+          <Col>
+            <Image src="images/specs-bottom.jpg" fluid />
+          </Col>
+        </Row>
       </div>
     );
   }
