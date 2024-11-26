@@ -66,32 +66,22 @@ class Photos extends React.Component {
 export default Photos;
 
 const IMAGES = [
+  { key: "ss-v2", src: "images/gallery/ss-v2/thumb.jpg" },
   { key: "gray-bbs", src: "images/gallery/gray-bbs/thumb.jpg" },
   { key: "black-gold-v2", src: "images/gallery/black-gold-v2/thumb.jpg" },
-
   { key: "jose-green", src: "images/gallery/jose-green/main.jpg" },
-
   { key: "orange-targa", src: "images/gallery/orange-targa/main.jpg" },
-
   { key: "carbon", src: "images/gallery/carbon/main.jpg" },
-
   { key: "black-gold", src: "images/gallery/black-gold/icon.jpg" },
-
   { key: "steel-gray", src: "images/gallery/steel-gray/steel-gray-main.jpg" },
-
   { key: "gray-backdate", src: "images/gray-th.jpg" },
   { key: "green-backdate", src: "images/green-th.jpg" },
-
   { key: "blue-backdate", src: "images/blue-th.jpg" },
-
   { key: "dkblue-backdate", src: "images/gallery/dkblue-backdate/thumb.jpg" },
-
   {
     key: "grayblue-backdate",
     src: "images/gallery/grayblue-backdate/thumb.jpg",
   },
-
   { key: "blue-ss", src: "images/gallery/blue-ss/icon.jpg" },
-
   { key: "gray-ss", src: "images/gallery/gray-ss/icon.jpg" },
 ];
