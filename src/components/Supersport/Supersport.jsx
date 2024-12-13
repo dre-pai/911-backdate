@@ -10,6 +10,7 @@ function Supersport() {
           playsinline="playsinline"
           autoplay="autoplay"
           loop="loop"
+          muted="muted"
         ></video>
       </Row>
       <Row>
