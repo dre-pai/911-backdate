@@ -127,23 +127,7 @@ function Supersport() {
         >
           VIEW BROCHURE
         </a>
-      </Row>
-      <Row>
-        <Col className="supersport-img-col">
-          <Image src="images/sketch-front.jpg" fluid />
-        </Col>
-        <Col className="supersport-img-col">
-          <Image src="images/sketch-back.jpg" fluid />
-        </Col>
-      </Row>
-      <Row>
-        <Col className="supersport-img-col">
-          <Image src="images/sketch-side.jpg" fluid />
-        </Col>
-        <Col className="supersport-img-col">
-          <Image src="images/sketch-top.jpg" fluid />
-        </Col>
-      </Row>
+      </Row>   
       <Row>
         <Col className="supersport-img-col">
           <Image src="images/supersport-main.jpg" fluid />
