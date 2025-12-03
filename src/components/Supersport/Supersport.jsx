@@ -1,7 +1,51 @@
 import "./Supersport.css";
 import { Row, Col, Image } from "react-bootstrap";
+import { useState } from "react";
 
 function Supersport() {
+  // Generate array of image paths
+  const imagePaths = Array.from({ length: 26 }, (_, i) => 
+    `images/ss-${String(i + 1).padStart(2, '0')}.jpg`
+  );
+
+  const [lightboxImage, setLightboxImage] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const openLightbox = (imagePath, index) => {
+    setLightboxImage(imagePath);
+    setCurrentIndex(index);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeLightbox = () => {
+    setLightboxImage(null);
+    document.body.style.overflow = 'unset';
+  };
+
+  const navigateImage = (direction) => {
+    if (direction === 'prev') {
+      const newIndex = currentIndex > 0 ? currentIndex - 1 : imagePaths.length - 1;
+      setCurrentIndex(newIndex);
+      setLightboxImage(imagePaths[newIndex]);
+    } else {
+      const newIndex = currentIndex < imagePaths.length - 1 ? currentIndex + 1 : 0;
+      setCurrentIndex(newIndex);
+      setLightboxImage(imagePaths[newIndex]);
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (lightboxImage) {
+      if (e.key === 'Escape') {
+        closeLightbox();
+      } else if (e.key === 'ArrowLeft') {
+        navigateImage('prev');
+      } else if (e.key === 'ArrowRight') {
+        navigateImage('next');
+      }
+    }
+  };
+
   return (
     <div className="container-ss">
       <Row className="vid-row" id="supersport-vid">
@@ -15,9 +59,6 @@ function Supersport() {
       </Row>
       <Row>
         <Col>
-          <div className="img-right">
-            <Image src="images/supersport-fr.jpg" fluid />
-          </div>
           <p className="first-p">
             We are pleased to announce the launch of the SuperSport Backdate.
             Designed as a modern interpretation of Porsche's timeless long-hood
@@ -77,9 +118,6 @@ function Supersport() {
       </Row>
       <Row>
         <Col>
-          <div className="img-left">
-            <Image src="images/supersport-bl.jpg" fluid />
-          </div>
           <p>
             The cabin of the vehicle is entirely custom. Each element of the
             interior is easily adapted to the preference of the client, from the
@@ -127,33 +165,37 @@ function Supersport() {
         >
           VIEW BROCHURE
         </a>
-      </Row>   
-      <Row>
-        <Col className="supersport-img-col">
-          <Image src="images/supersport-main.jpg" fluid />
-        </Col>
       </Row>
       <Row>
-        <Col className="supersport-img-col" md>
-          <Image src="images/supersport-top.jpg" fluid />
-        </Col>
-        <Col className="supersport-img-col" md>
-          <Image src="images/supersport-profile.jpg" fluid />
-        </Col>
-      </Row>
-      <Row>
-        <Col className="supersport-img-col" md>
-          <Image src="images/interior-2.jpg" fluid />
-        </Col>
-        <Col className="supersport-img-col" md>
-          <Image src="images/interior-1.jpg" fluid />
-        </Col>
-      </Row>
-      <Row>
-        <Col className="supersport-img-col">
-          <Image src="images/ss3.jpg" fluid />
+        <Col>
+          <div className="supersport-gallery" onKeyDown={handleKeyDown} tabIndex={0}>
+            {imagePaths.map((imagePath, index) => (
+              <div 
+                key={index} 
+                className="gallery-item"
+                onClick={() => openLightbox(imagePath, index)}
+              >
+                <Image src={imagePath} fluid />
+              </div>
+            ))}
+          </div>
         </Col>
       </Row>
+
+      {lightboxImage && (
+        <div className="lightbox-overlay" onClick={closeLightbox}>
+          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+            <button className="lightbox-close" onClick={closeLightbox}>&times;</button>
+            <button className="lightbox-nav lightbox-prev" onClick={() => navigateImage('prev')}>
+              &#8249;
+            </button>
+            <img src={lightboxImage} alt="Supersport" className="lightbox-image" />
+            <button className="lightbox-nav lightbox-next" onClick={() => navigateImage('next')}>
+              &#8250;
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
